@@ -1,0 +1,136 @@
+[_nghost-c55]{position:absolute;top:0;left:0;bottom:0;right:0;background:hsla(0,0%,100%,.95);z-index:1000}.circle360[_ngcontent-c55]{background-position:0 0;margin:90px auto;width:196px;height:196px;position:relative;font-size:14px}.circle360[_ngcontent-c55]   .quadrant[_ngcontent-c55]{width:98px;height:98px;position:relative}.circle360[_ngcontent-c55]   .quadrant[_ngcontent-c55]   .item[_ngcontent-c55]{position:absolute;top:0;bottom:0;left:0;right:0}.circle360[_ngcontent-c55]   .item1.ok[_ngcontent-c55]{background-image:url(http://static.makemeclear.com/images/diagnose/360_green_1.png)}.circle360[_ngcontent-c55]   .item1.some[_ngcontent-c55]{background-image:url(http://static.makemeclear.com/images/diagnose/360_orange_1.png)}.circle360[_ngcontent-c55]   .item2.ok[_ngcontent-c55]{background-image:url(http://static.makemeclear.com/images/diagnose/360_green_2.png)}.circle360[_ngcontent-c55]   .item2.some[_ngcontent-c55]{background-image:url(http://static.makemeclear.com/images/diagnose/360_orange_2.png)}.circle360[_ngcontent-c55]   .q1[_ngcontent-c55]   .item[_ngcontent-c55]{background-position:0 0}.circle360[_ngcontent-c55]   .q1[_ngcontent-c55]   .label1[_ngcontent-c55]{left:-304px;bottom:30px;text-align:right}.circle360[_ngcontent-c55]   .q1[_ngcontent-c55]   .label2[_ngcontent-c55]{left:-256px;top:-12px;text-align:right}.circle360[_ngcontent-c55]   .q2[_ngcontent-c55]   .item[_ngcontent-c55]{background-position:100% 0}.circle360[_ngcontent-c55]   .q2[_ngcontent-c55]   .label1[_ngcontent-c55]{left:54px;top:-12px;text-align:left}.circle360[_ngcontent-c55]   .q2[_ngcontent-c55]   .label2[_ngcontent-c55]{left:108px;bottom:30px;text-align:left}.circle360[_ngcontent-c55]   .q3[_ngcontent-c55]   .item[_ngcontent-c55]{background-position:100% 100%}.circle360[_ngcontent-c55]   .q3[_ngcontent-c55]   .label1[_ngcontent-c55]{left:104px;top:30px;text-align:left}.circle360[_ngcontent-c55]   .q3[_ngcontent-c55]   .label2[_ngcontent-c55]{left:54px;bottom:-14px;text-align:left}.circle360[_ngcontent-c55]   .q4[_ngcontent-c55]   .item[_ngcontent-c55]{background-position:0 100%}.circle360[_ngcontent-c55]   .q4[_ngcontent-c55]   .label1[_ngcontent-c55]{left:-256px;bottom:-14px;text-align:right}.circle360[_ngcontent-c55]   .q4[_ngcontent-c55]   .label2[_ngcontent-c55]{left:-304px;top:32px;text-align:right}.circle360[_ngcontent-c55]   .text[_ngcontent-c55]{position:absolute;left:0;right:0;top:63px;text-align:center;color:#868788;font-size:13px;line-height:18px}.circle360[_ngcontent-c55]   .text[_ngcontent-c55]   .bold[_ngcontent-c55]{font-size:35px;font-weight:700;line-height:35px}.circle360[_ngcontent-c55]   .label360[_ngcontent-c55]{position:absolute;width:300px;cursor:pointer;text-transform:uppercase}.circle360[_ngcontent-c55]   .label360[_ngcontent-c55]   .ok[_ngcontent-c55]{color:#86b036;font-weight:700}.circle360[_ngcontent-c55]   .label360[_ngcontent-c55]   .some[_ngcontent-c55]{color:#f28e08;font-weight:700}.circle360[_ngcontent-c55]   .label360[_ngcontent-c55]   .severe[_ngcontent-c55]{color:red;font-weight:700}
+
+.mb-0 > a {
+  display: block;
+  position: relative;
+}
+.mb-0 > a:after {
+  content: "\f078"; /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+}
+.mb-0 > a[aria-expanded="true"]:after {
+  content: "\f077"; /* fa-chevron-up */
+}
+.card{
+  margin-bottom: 0px;
+  border: none;
+}
+.card-header{
+  background-color: #fff !important;
+  
+}
+.card-header h5 a{
+  font-size: 15px;
+}
+.my_nav-pills li{
+  background: linear-gradient(0,#f4f7f8,#fbfcfd);
+  border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+  height: 4em;    
+  line-height: 12px;
+}
+.my_nav-pills li a{
+  display: inline-block;  
+  vertical-align: middle; 
+    font-size: 12px;
+    padding: 15px 12px;
+}
+
+
+
+.my_nav-pills li:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;       
+}
+
+.nav-pills > li > a.active.nav-link {
+  color: #ffffff;
+  background-color: #058b9d;
+  border-color: #058b9d;
+}
+.my_nav-pills li:hover{
+  color: #ffffff;
+  background: #058b9d;
+  border-color: #058b9d;
+  
+}
+
+.my_nav-pills li:hover >a{
+  color: #ffffff;
+  
+}
+
+.teeth_img{
+  background-image: url(../../../assets/images/odontogram.900e5d982da4efda550a.png);
+  width: 768px;
+    height: 312px;
+    margin: 65px auto 0 auto;
+}
+
+.bone-line_img{
+  background-image: url(../../../assets/images/bone_line.456a5eaafaabf8058f66.png);
+  width: 768px;
+    height: 312px;
+    margin: 65px auto 0 auto;
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+}
+.bone-normal_img{
+  background-image: url(../../../assets/images/bone_normal.58e72a3176137058230a.png);
+  width: 768px;
+    height: 312px;
+    margin: 65px auto 0 auto;
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+}
+
+.bone-normal2_img{
+  background-image: url(../../../assets/images/gengiva_normal.e37c431cd613ce629df0.png);
+  width: 768px;
+    height: 312px;
+    margin: 65px auto 0 auto;
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+}
+
+.p-one{
+  color: #058b9d;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.p-two{
+  text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.p-three{
+ 
+    font-size: 11px;
+}
+
+.p-four{
+  text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.p-five{
+  text-transform: uppercase;
+    margin-top: 25px;
+    font-size: 12px;
+}

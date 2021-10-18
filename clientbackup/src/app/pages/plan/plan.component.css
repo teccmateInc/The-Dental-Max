@@ -1,0 +1,2684 @@
+[_nghost-c55]{position:absolute;top:0;left:0;bottom:0;right:0;background:hsla(0,0%,100%,.95);z-index:1000}.circle360[_ngcontent-c55]{background-position:0 0;margin:90px auto;width:196px;height:196px;position:relative;font-size:14px}.circle360[_ngcontent-c55]   .quadrant[_ngcontent-c55]{width:98px;height:98px;position:relative}.circle360[_ngcontent-c55]   .quadrant[_ngcontent-c55]   .item[_ngcontent-c55]{position:absolute;top:0;bottom:0;left:0;right:0}.circle360[_ngcontent-c55]   .item1.ok[_ngcontent-c55]{background-image:url(http://static.makemeclear.com/images/diagnose/360_green_1.png)}.circle360[_ngcontent-c55]   .item1.some[_ngcontent-c55]{background-image:url(http://static.makemeclear.com/images/diagnose/360_orange_1.png)}.circle360[_ngcontent-c55]   .item2.ok[_ngcontent-c55]{background-image:url(http://static.makemeclear.com/images/diagnose/360_green_2.png)}.circle360[_ngcontent-c55]   .item2.some[_ngcontent-c55]{background-image:url(http://static.makemeclear.com/images/diagnose/360_orange_2.png)}.circle360[_ngcontent-c55]   .q1[_ngcontent-c55]   .item[_ngcontent-c55]{background-position:0 0}.circle360[_ngcontent-c55]   .q1[_ngcontent-c55]   .label1[_ngcontent-c55]{left:-304px;bottom:30px;text-align:right}.circle360[_ngcontent-c55]   .q1[_ngcontent-c55]   .label2[_ngcontent-c55]{left:-256px;top:-12px;text-align:right}.circle360[_ngcontent-c55]   .q2[_ngcontent-c55]   .item[_ngcontent-c55]{background-position:100% 0}.circle360[_ngcontent-c55]   .q2[_ngcontent-c55]   .label1[_ngcontent-c55]{left:54px;top:-12px;text-align:left}.circle360[_ngcontent-c55]   .q2[_ngcontent-c55]   .label2[_ngcontent-c55]{left:108px;bottom:30px;text-align:left}.circle360[_ngcontent-c55]   .q3[_ngcontent-c55]   .item[_ngcontent-c55]{background-position:100% 100%}.circle360[_ngcontent-c55]   .q3[_ngcontent-c55]   .label1[_ngcontent-c55]{left:104px;top:30px;text-align:left}.circle360[_ngcontent-c55]   .q3[_ngcontent-c55]   .label2[_ngcontent-c55]{left:54px;bottom:-14px;text-align:left}.circle360[_ngcontent-c55]   .q4[_ngcontent-c55]   .item[_ngcontent-c55]{background-position:0 100%}.circle360[_ngcontent-c55]   .q4[_ngcontent-c55]   .label1[_ngcontent-c55]{left:-256px;bottom:-14px;text-align:right}.circle360[_ngcontent-c55]   .q4[_ngcontent-c55]   .label2[_ngcontent-c55]{left:-304px;top:32px;text-align:right}.circle360[_ngcontent-c55]   .text[_ngcontent-c55]{position:absolute;left:0;right:0;top:63px;text-align:center;color:#868788;font-size:13px;line-height:18px}.circle360[_ngcontent-c55]   .text[_ngcontent-c55]   .bold[_ngcontent-c55]{font-size:35px;font-weight:700;line-height:35px}.circle360[_ngcontent-c55]   .label360[_ngcontent-c55]{position:absolute;width:300px;cursor:pointer;text-transform:uppercase}.circle360[_ngcontent-c55]   .label360[_ngcontent-c55]   .ok[_ngcontent-c55]{color:#86b036;font-weight:700}.circle360[_ngcontent-c55]   .label360[_ngcontent-c55]   .some[_ngcontent-c55]{color:#f28e08;font-weight:700}.circle360[_ngcontent-c55]   .label360[_ngcontent-c55]   .severe[_ngcontent-c55]{color:red;font-weight:700}
+
+.mb-0 > a {
+  display: block;
+  position: relative;
+}
+/* .mb-0 > a:after {
+  content: "\f078";
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+}
+.mb-0 > a[aria-expanded="true"]:after {
+  content: "\f077"; 
+} */
+.card{
+  margin-bottom: 0px;
+  border: none;
+}
+.card-header{
+  background-color: #fff !important;
+  
+}
+.card-header h5 a{
+  font-size: 15px;
+}
+.my_nav-pills li{
+  background: linear-gradient(0,#f4f7f8,#fbfcfd);
+  border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+  height: 4em;    
+  line-height: 12px;
+}
+.my_nav-pills li a{
+  display: inline-block;  
+  vertical-align: middle; 
+    font-size: 12px;
+    padding: 15px 12px;
+    color: #000;
+}
+
+
+
+.my_nav-pills li:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;       
+}
+
+.nav-pills > li > a.active.nav-link {
+  color: #ffffff;
+  background-color: #058b9d;
+  border-color: #058b9d;
+}
+.my_nav-pills li:hover{
+  color: #ffffff;
+  background: #058b9d;
+  border-color: #058b9d;
+  
+}
+
+.my_nav-pills li:hover >a{
+  color: #ffffff;
+  
+}
+
+.teeth_img{
+  background-image: url(../../../assets/images/odontogram.900e5d982da4efda550a.png);
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: 500;
+}
+
+.bone-line_img{
+  background-image: url(../../../assets/images/bone_line.456a5eaafaabf8058f66.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 590;
+}
+.bone-normal_img{
+  background-image: url(../../../assets/images/bone_normal.58e72a3176137058230a.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 590;
+}
+
+.bone-normal2_img{
+  background-image: url(../../../assets/images/gengiva_normal.e37c431cd613ce629df0.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 590;
+}
+
+
+.fracture_crown_img{
+  background-image: url(../../../assets/images/fracture_crown.cadd963fc64f118c4320.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.rct_nok_img{
+  background-image: url(../../../assets/images/rct_nok.203e5dd92f7e17f82559.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.fracture_root{
+  background-image: url(../../../assets/images/fracture_root.287945c6fb48bc16d6c8.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.caries_occlusal_img{
+  background-image: url(../../../assets/images/caries_occlusal.6e7860e3d0b5283ae71d.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.caries_mesial_img{
+  background-image: url(../../../assets/images/caries_mesial.066895c133d20c8a8a8c.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.caries_buccal_img{
+  background-image: url(../../../assets/images/caries_buccal.3fdcdedd5627f05e1dac.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.caries_distal_img{
+  background-image: url(../../../assets/images/caries_distal.45b18415c097c8b49b3c.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.caries_lingual_img{
+  background-image: url(../../../assets/images/caries_lingual.0ca175b5cf3509ec3237.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.p-one{
+  color: #058b9d;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.p-two{
+  text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #000;
+}
+.p-three{
+ 
+  font-size: 12px;
+}
+
+.p-four{
+  text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.p-five{
+  text-transform: uppercase;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 0;
+}
+.p-six{
+  word-break: break-all;
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.p-seven{
+  word-break: break-all;
+  font-size: 12px;
+  color: #000;
+}
+.mb-0 > a[aria-expanded="true"] {
+  color: #079dae;
+}
+.mb-0 > a:hover {
+  color: #079dae;
+}
+.checkbox {
+  display: inline-block;
+  padding: 3px 9px;
+  transform: translateZ(0);
+  display: block;
+}
+.checkbox label {
+  cursor: pointer;
+  padding-left: 0;
+  margin-bottom: 0px;
+}
+.checkbox input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: 0;
+  pointer-events: none;
+}
+.checkbox .checkbox-material {
+  vertical-align: middle;
+  position: relative;
+  top: 2px;
+    right: 5px;
+}
+.checkbox .checkbox-material:before {
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;
+}
+.checkbox .checkbox-material .check {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: 1;
+}
+.checkbox .checkbox-material .check:before {
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  display: block;
+  margin-top: -4px;
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+  animation: checkbox-off 0.3s forwards ease-out;
+}
+.checkbox input[type=checkbox]:focus + .checkbox-material .check:after {
+  opacity: 0.2;
+}
+.checkbox input[type=checkbox]:checked + .checkbox-material .check:before {
+  box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+  animation: checkbox-on 0.3s forwards ease-out;
+}
+.checkbox input[type=checkbox]:not(:checked) + .checkbox-material:before {
+  animation: rippleOff 700ms forwards ease-out;
+}
+.checkbox input[type=checkbox]:checked + .checkbox-material:before {
+  animation: rippleOn 700ms forwards ease-out;
+}
+.checkbox input[type=checkbox]:not(:checked) + .checkbox-material .check:after {
+  animation: rippleOff 700ms forwards ease-out;
+}
+.checkbox input[type=checkbox]:checked + .checkbox-material .check:after {
+  animation: rippleOn 700ms forwards ease-out;
+}
+.checkbox input[type=checkbox][disabled]:not(:checked) ~ .checkbox-material .check:before, .checkbox input[type=checkbox][disabled] + .circle {
+  opacity: 0.5;
+}
+.checkbox input[type=checkbox][disabled] + .checkbox-material .check:after {
+  background-color: rgba(0, 0, 0, 0.84);
+  transform: rotate(-45deg);
+}
+.coloured .checkbox-material .check {
+  color: rgba(51, 37, 37, 0.54);
+  
+}
+.coloured .checkbox-material:before {
+  background-color: #2faef8;
+}
+.coloured input[type=checkbox]:checked + .checkbox-material .check {
+  color: #2faef8;
+}
+@keyframes checkbox-on {
+  0% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px;
+ }
+  50% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px;
+ }
+  100% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+ }
+}
+@keyframes checkbox-off {
+  0% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px, 0 0 0 0 inset;
+ }
+  25% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px, 0 0 0 0 inset;
+ }
+  50% {
+    transform: rotate(45deg);
+    margin-top: -4px;
+    margin-left: 6px;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px, 0 0 0 0 inset;
+ }
+  51% {
+    transform: rotate(0deg);
+    margin-top: -2px;
+    margin-left: -2px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0px 0px 0 10px inset;
+ }
+  100% {
+    transform: rotate(0deg);
+    margin-top: -2px;
+    margin-left: -2px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0px 0px 0 0px inset;
+ }
+}
+@keyframes rippleOn {
+  0% {
+    opacity: 0.5;
+ }
+  100% {
+    opacity: 0;
+    transform: scale(13, 13);
+ }
+}
+@keyframes rippleOff {
+  0% {
+    opacity: 0.5;
+ }
+  100% {
+    opacity: 0;
+    transform: scale(13, 13);
+ }
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Roboto); */
+ @keyframes ripple {
+	 0% {
+		 box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.0);
+	}
+	 50% {
+		 box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
+	}
+	 100% {
+		 box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0);
+	}
+}
+ .md-radio {
+	 margin: 16px 0;
+}
+ .md-radio.md-radio-inline {
+	 display: inline-block;
+}
+ .md-radio input[type="radio"] {
+	 display: none;
+}
+ .md-radio input[type="radio"]:checked + label:before {
+	 border-color: #2faef8;
+	 animation: ripple 0.2s linear forwards;
+}
+ .md-radio input[type="radio"]:checked + label:after {
+	 transform: scale(1);
+}
+ .md-radio label {
+	 display: inline-block;
+	 min-height: 20px;
+	 position: relative;
+	 padding: 0 30px;
+	 margin-bottom: 0;
+	 cursor: pointer;
+	 vertical-align: bottom;
+}
+ .md-radio label:before, .md-radio label:after {
+	 position: absolute;
+	 content: '';
+	 border-radius: 50%;
+	 transition: all 0.3s ease;
+	 transition-property: transform, border-color;
+}
+ .md-radio label:before {
+	 left: 0;
+	 top: 0;
+	 width: 20px;
+	 height: 20px;
+	 border: 2px solid rgba(0, 0, 0, 0.54);
+}
+ .md-radio label:after {
+	 top: 5px;
+	 left: 5px;
+	 width: 10px;
+	 height: 10px;
+	 transform: scale(0);
+	 background: #2faef8;
+}
+.teeth_height{
+  height: 312px;
+  margin: 55px auto 0 auto;
+}
+
+#tooth18{
+  width: 51px;
+    height: 99px;
+    top: 0;
+    left: 0;
+}
+#tooth18{
+  background-position: 0 0;
+}
+
+.tooth:hover:not(.disabled) {
+  opacity: .6;
+}
+
+.tooth {
+  background-repeat: no-repeat;
+  position: absolute;
+  cursor: pointer;
+  opacity: 1;
+}
+.tooth .teeth_img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+#tooth18 .teeth_img{
+  background-position: 0 0;
+}
+
+#tooth18 .bone-line_img{
+  background-position: 0 0;
+}
+#tooth18 .bone-normal_img{
+  background-position: 0 0;
+}
+#tooth18 .bone-normal2_img{
+  background-position: 0 0;
+}
+
+#tooth17 {
+  width: 56px;
+  height: 126px;
+  top: 0;
+  left: 51px;
+}
+
+#tooth17{
+  background-position: -51px 0;
+}
+
+#tooth17 .teeth_img{
+  background-position: -51px 0;
+}
+
+#tooth17 .bone-line_img{
+  background-position: -51px 0;
+}
+#tooth17 .bone-normal_img{
+  background-position: -51px 0;
+}
+#tooth17 .bone-normal2_img{
+  background-position: -51px 0;
+}
+
+#tooth16 {
+  width: 53px;
+  height: 137px;
+  top: 0;
+  left: 107px;
+}
+
+#tooth16{
+  background-position: -107px 0;
+}
+
+#tooth16 .teeth_img{
+  background-position: -107px 0;
+}
+
+#tooth16 .bone-line_img{
+  background-position: -107px 0;
+}
+#tooth16 .bone-normal_img{
+  background-position: -107px 0;
+}
+#tooth16 .bone-normal2_img{
+  background-position: -107px 0;
+}
+
+#tooth15 {
+  width: 42px;
+  height: 149px;
+  top: 0;
+  left: 160px;
+}
+
+#tooth15{
+  background-position: -160px 0;
+}
+
+#tooth15 .teeth_img{
+  background-position: -160px 0;
+}
+
+#tooth15 .bone-line_img{
+  background-position: -160px 0;
+}
+#tooth15 .bone-normal_img{
+  background-position: -160px 0;
+}
+#tooth15 .bone-normal2_img{
+  background-position: -160px 0;
+}
+
+#tooth14 {
+  width: 43px;
+  height: 159px;
+  top: 0;
+  left: 202px;
+}
+
+#tooth14{
+  background-position: -202px 0;
+}
+
+#tooth14 .teeth_img{
+  background-position: -202px 0;
+}
+
+#tooth14 .bone-line_img{
+  background-position: -202px 0;
+}
+#tooth14 .bone-normal_img{
+  background-position: -202px 0;
+}
+#tooth14 .bone-normal2_img{
+  background-position: -202px 0;
+}
+
+#tooth13 {
+  width: 41px;
+  height: 172px;
+  top: 0;
+  left: 245px;
+}
+
+#tooth13{
+  background-position: -245px 0;
+}
+
+#tooth13 .teeth_img{
+  background-position: -245px 0;
+}
+
+#tooth13 .bone-line_img{
+  background-position: -245px 0;
+}
+#tooth13 .bone-normal_img{
+  background-position: -245px 0;
+}
+#tooth13 .bone-normal2_img{
+  background-position: -245px 0;
+}
+
+#tooth12 {
+  width: 43px;
+  height: 181px;
+  top: 0;
+  left: 286px;
+}
+
+#tooth12{
+  background-position: -286px 0;
+}
+
+#tooth12 .teeth_img{
+  background-position: -286px 0;
+}
+
+#tooth12 .bone-line_img{
+  background-position: -286px 0;
+}
+#tooth12 .bone-normal_img{
+  background-position: -286px 0;
+}
+#tooth12 .bone-normal2_img{
+  background-position: -286px 0;
+}
+
+#tooth11 {
+  width: 55px;
+  height: 189px;
+  top: 0;
+  left: 329px;
+}
+
+#tooth11{
+  background-position: -329px 0;
+}
+
+#tooth11 .teeth_img{
+  background-position: -329px 0;
+}
+
+#tooth11 .bone-line_img{
+  background-position: -329px 0;
+}
+#tooth11 .bone-normal_img{
+  background-position: -329px 0;
+}
+#tooth11 .bone-normal2_img{
+  background-position: -329px 0;
+}
+
+#tooth21 {
+  width: 55px;
+  height: 189px;
+  top: 0;
+  left: 384px;
+}
+
+#tooth21{
+  background-position: -384px 0;
+}
+
+#tooth21 .teeth_img{
+  background-position: -384px 0;
+}
+
+#tooth21 .bone-line_img{
+  background-position: -384px 0;
+}
+#tooth21 .bone-normal_img{
+  background-position: -384px 0;
+}
+#tooth21 .bone-normal2_img{
+  background-position: -384px 0;
+}
+
+#tooth22 {
+  width: 43px;
+  height: 181px;
+  top: 0;
+  left: 439px;
+}
+
+#tooth22{
+  background-position: -439px 0;
+}
+
+#tooth22 .teeth_img{
+  background-position: -439px 0;
+}
+
+#tooth22 .bone-line_img{
+  background-position: -439px 0;
+}
+#tooth22 .bone-normal_img{
+  background-position: -439px 0;
+}
+#tooth22 .bone-normal2_img{
+  background-position: -439px 0;
+}
+
+#tooth23 {
+  width: 41px;
+  height: 172px;
+  top: 0;
+  left: 482px;
+}
+
+#tooth23{
+  background-position: -482px 0;
+}
+
+#tooth23 .teeth_img{
+  background-position: -482px 0;
+}
+
+#tooth23 .bone-line_img{
+  background-position: -482px 0;
+}
+#tooth23 .bone-normal_img{
+  background-position: -482px 0;
+}
+#tooth23 .bone-normal2_img{
+  background-position: -482px 0;
+}
+
+#tooth24 {
+  width: 43px;
+  height: 159px;
+  top: 0;
+  left: 523px;
+}
+
+#tooth24{
+  background-position: -523px 0;
+}
+
+#tooth24 .teeth_img{
+  background-position: -523px 0;
+}
+
+#tooth24 .bone-line_img{
+  background-position: -523px 0;
+}
+#tooth24 .bone-normal_img{
+  background-position: -523px 0;
+}
+#tooth24 .bone-normal2_img{
+  background-position: -523px 0;
+}
+
+#tooth25 {
+  width: 42px;
+  height: 149px;
+  top: 0;
+  left: 566px;
+}
+
+#tooth25{
+  background-position: -566px 0;
+}
+
+#tooth25 .teeth_img{
+  background-position: -566px 0;
+}
+
+#tooth25 .bone-line_img{
+  background-position: -566px 0;
+}
+#tooth25 .bone-normal_img{
+  background-position: -566px 0;
+}
+#tooth25 .bone-normal2_img{
+  background-position: -566px 0;
+}
+
+#tooth26 {
+  width: 53px;
+  height: 137px;
+  top: 0;
+  left: 608px;
+}
+
+#tooth26{
+  background-position: -608px 0;
+}
+
+#tooth26 .teeth_img{
+  background-position: -608px 0;
+}
+
+#tooth26 .bone-line_img{
+  background-position: -608px 0;
+}
+#tooth26 .bone-normal_img{
+  background-position: -608px 0;
+}
+#tooth26 .bone-normal2_img{
+  background-position: -608px 0;
+}
+
+#tooth27 {
+  width: 56px;
+  height: 126px;
+  top: 0;
+  left: 661px;
+}
+
+#tooth27{
+  background-position: -661px 0;
+}
+
+#tooth27 .teeth_img{
+  background-position: -661px 0;
+}
+
+#tooth27 .bone-line_img{
+  background-position: -661px 0;
+}
+#tooth27 .bone-normal_img{
+  background-position: -661px 0;
+}
+#tooth27 .bone-normal2_img{
+  background-position: -661px 0;
+}
+
+#tooth28 {
+  width: 51px;
+  height: 99px;
+  top: 0;
+  left: 717px;
+}
+
+#tooth28{
+  background-position: -717px 0;
+}
+
+#tooth28 .teeth_img{
+  background-position: -717px 0;
+}
+
+#tooth28 .bone-line_img{
+  background-position: -717px 0;
+}
+#tooth28 .bone-normal_img{
+  background-position: -717px 0;
+}
+#tooth28 .bone-normal2_img{
+  background-position: -717px 0;
+}
+
+#tooth48 {
+  width: 64px;
+  height: 186px;
+  bottom: 0;
+  left: 0;
+}
+
+#tooth48{
+  background-position: 0 -126px;
+}
+
+#tooth48 .teeth_img{
+  background-position: 0 -126px;
+}
+
+#tooth48 .bone-line_img{
+  background-position: 0 -126px;
+}
+#tooth48 .bone-normal_img{
+  background-position: 0 -126px;
+}
+#tooth48 .bone-normal2_img{
+  background-position: 0 -126px;
+}
+
+#tooth47 {
+  width: 59px;
+  height: 180px;
+  bottom: 0;
+  left: 64px;
+}
+
+#tooth47{
+  background-position: -64px -132px;
+}
+
+#tooth47 .teeth_img{
+  background-position:-64px -132px;
+}
+
+#tooth47 .bone-line_img{
+  background-position: -64px -132px;
+}
+#tooth47 .bone-normal_img{
+  background-position: -64px -132px;
+}
+#tooth47 .bone-normal2_img{
+  background-position: -64px -132px;
+}
+
+#tooth46 {
+  width: 61px;
+  height: 163px;
+  bottom: 0;
+  left: 123px;
+}
+
+#tooth46{
+  background-position: -123px -149px;
+}
+
+#tooth46 .teeth_img{
+  background-position: -123px -149px;
+}
+
+#tooth46 .bone-line_img{
+  background-position: -123px -149px;
+}
+#tooth46 .bone-normal_img{
+  background-position: -123px -149px;
+}
+#tooth46 .bone-normal2_img{
+  background-position: -123px -149px;
+}
+
+#tooth45 {
+  width: 45px;
+  bottom: 0;
+  height: 154px;
+  left: 184px;
+}
+
+#tooth45{
+  background-position: -184px -158px;
+}
+
+#tooth45 .teeth_img{
+  background-position: -184px -158px;
+}
+
+#tooth45 .bone-line_img{
+  background-position: -184px -158px;
+}
+#tooth45 .bone-normal_img{
+  background-position: -184px -158px;
+}
+#tooth45 .bone-normal2_img{
+  background-position: -184px -158px;
+}
+
+#tooth44 {
+  width: 45px;
+    bottom: 0;
+  height: 142px;
+  left: 229px;
+}
+
+#tooth44{
+  background-position: -229px -170px;
+}
+
+#tooth44 .teeth_img{
+  background-position: -229px -170px;
+}
+
+#tooth44 .bone-line_img{
+  background-position: -229px -170px;
+}
+#tooth44 .bone-normal_img{
+  background-position: -229px -170px;
+}
+#tooth44 .bone-normal2_img{
+  background-position: -229px -170px;
+}
+
+#tooth43 {
+  width: 37px;
+  height: 137px;
+  bottom: 0;
+  left: 274px;
+}
+
+#tooth43{
+  background-position: -274px -175px;
+}
+
+#tooth43 .teeth_img{
+  background-position: -274px -175px;
+}
+
+#tooth43 .bone-line_img{
+  background-position: -274px -175px;
+}
+#tooth43 .bone-normal_img{
+  background-position: -274px -175px;
+}
+#tooth43 .bone-normal2_img{
+  background-position: -274px -175px;
+} 
+
+#tooth42 {
+  width: 36px;
+  height: 129px;
+  bottom: 0;
+  left: 311px;
+}
+
+#tooth42{
+  background-position: -311px -183px;
+}
+
+#tooth42 .teeth_img{
+  background-position: -311px -183px;
+}
+
+#tooth42 .bone-line_img{
+  background-position: -311px -183px;
+}
+#tooth42 .bone-normal_img{
+  background-position: -311px -183px;
+}
+#tooth42 .bone-normal2_img{
+  background-position: -311px -183px;
+}
+
+#tooth41 {
+  width: 37px;
+  height: 121px;
+  bottom: 0;
+  left: 347px;
+}
+
+#tooth41{
+  background-position: -347px -191px;
+}
+
+#tooth41 .teeth_img{
+  background-position: -347px -191px;
+}
+
+#tooth41 .bone-line_img{
+  background-position: -347px -191px;
+}
+#tooth41 .bone-normal_img{
+  background-position: -347px -191px;
+}
+#tooth41 .bone-normal2_img{
+  background-position: -347px -191px;
+}
+
+#tooth31 {
+  width: 37px;
+  height: 121px;
+  bottom: 0;
+  left: 384px;
+}
+
+#tooth31{
+  background-position: -384px -191px;
+}
+
+#tooth31 .teeth_img{
+  background-position: -384px -191px;
+}
+
+#tooth31 .bone-line_img{
+  background-position: -384px -191px;
+}
+#tooth31 .bone-normal_img{
+  background-position: -384px -191px;
+}
+#tooth31 .bone-normal2_img{
+  background-position: -384px -191px;
+}
+
+#tooth32 {
+  width: 36px;
+  height: 129px;
+  bottom: 0;
+  left: 421px;
+}
+
+#tooth32{
+  background-position: -421px -183px;
+}
+
+#tooth32 .teeth_img{
+  background-position: -421px -183px;
+}
+
+#tooth32 .bone-line_img{
+  background-position: -421px -183px;
+}
+#tooth32 .bone-normal_img{
+  background-position: -421px -183px;
+}
+#tooth32 .bone-normal2_img{
+  background-position: -421px -183px;
+}
+
+#tooth33 {
+  width: 37px;
+  height: 137px;
+  bottom: 0;
+  left: 457px;
+}
+
+#tooth33{
+  background-position: -457px -175px;
+}
+
+#tooth33 .teeth_img{
+  background-position: -457px -175px;
+}
+
+#tooth33 .bone-line_img{
+  background-position: -457px -175px;
+}
+#tooth33 .bone-normal_img{
+  background-position: -457px -175px;
+}
+#tooth33 .bone-normal2_img{
+  background-position: -457px -175px;
+}
+
+#tooth34 {
+  width: 45px;
+  bottom: 0;
+  height: 142px;
+    left: 494px;
+}
+
+#tooth34{
+  background-position: -494px -170px;
+}
+
+#tooth34 .teeth_img{
+  background-position: -494px -170px;
+}
+
+#tooth34 .bone-line_img{
+  background-position: -494px -170px;
+}
+#tooth34 .bone-normal_img{
+  background-position: -494px -170px;
+}
+#tooth34 .bone-normal2_img{
+  background-position: -494px -170px;
+}
+
+#tooth35 {
+  width: 45px;
+    bottom: 0;
+    height: 154px;
+    left: 539px;
+}
+
+#tooth35{
+  background-position: -539px -158px;
+}
+
+#tooth35 .teeth_img{
+  background-position: -539px -158px;
+}
+
+#tooth35 .bone-line_img{
+  background-position: -539px -158px;
+}
+#tooth35 .bone-normal_img{
+  background-position: -539px -158px;
+}
+#tooth35 .bone-normal2_img{
+  background-position: -539px -158px;
+}
+
+#tooth36 {
+  width: 61px;
+  height: 163px;
+  bottom: 0;
+  left: 584px;
+}
+
+#tooth36{
+  background-position: -584px -149px;
+}
+
+#tooth36 .teeth_img{
+  background-position: -584px -149px;
+}
+
+#tooth36 .bone-line_img{
+  background-position: -584px -149px;
+}
+#tooth36 .bone-normal_img{
+  background-position: -584px -149px;
+}
+#tooth36 .bone-normal2_img{
+  background-position: -584px -149px;
+}
+
+#tooth37 {
+  width: 59px;
+  height: 180px;
+  bottom: 0;
+  left: 645px;
+}
+
+#tooth37{
+  background-position: -645px -132px;
+}
+
+#tooth37 .teeth_img{
+  background-position: -645px -132px;
+}
+
+#tooth37 .bone-line_img{
+  background-position: -645px -132px;
+}
+#tooth37 .bone-normal_img{
+  background-position: -645px -132px;
+}
+#tooth37 .bone-normal2_img{
+  background-position: -645px -132px;
+}
+
+#tooth38 {
+  width: 64px;
+  height: 186px;
+  bottom: 0;
+  left: 704px;
+}
+
+#tooth38{
+  background-position: -704px -126px;
+}
+
+#tooth38 .teeth_img{
+  background-position: -704px -126px;
+}
+
+#tooth38 .bone-line_img{
+  background-position: -704px -126px;
+}
+#tooth38 .bone-normal_img{
+  background-position: -704px -126px;
+}
+#tooth38 .bone-normal2_img{
+  background-position: -704px -126px;
+}
+
+.toothactive {
+  opacity: .6;
+ 
+}
+.toothactive:before {
+
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 3px;
+  left: 2px;
+  right: 2px;
+  background-color: #8ca1ab;
+}
+
+.multisection1 {
+  opacity: .6;
+ 
+}
+.multisection1:before {
+
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 3px;
+  left: 2px;
+  right: 2px;
+  background-color: #8ca1ab;
+}
+
+.toothactive2 {
+  opacity: .6;
+ 
+}
+.toothactive2:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  height: 3px;
+  left: 2px;
+  right: 2px;
+  background-color: #8ca1ab;
+}
+
+.multisection {
+  opacity: .6;
+ 
+}
+.multisection:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  height: 3px;
+  left: 2px;
+  right: 2px;
+  background-color: #8ca1ab;
+}
+
+.odontogram-selection {
+  padding-right: 35px;
+  padding-bottom: 25px;
+}
+.clearfix {
+  display: block;
+}
+.odontogram-quadrant.quadrant1 {
+  background-position: 0 0;
+}
+.odontogram-quadrant.quadrant2 {
+  background-position: -70px 0;
+}
+.odontogram-quadrant {
+  width: 70px;
+  height: 35px;
+  background-image: url(../../../assets/images/selection.png);
+  background-repeat: no-repeat;
+  float: left;
+  cursor: pointer;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+    font-size: 0;
+}
+
+.odontogram-quadrant.quadrant3 {
+  background-position: 0 -40px;
+}
+
+.odontogram-quadrant.quadrant4 {
+  background-position: -70px -40px;
+}
+.clear-btn {
+  text-transform: uppercase;
+  border: 1px solid #9b9b9b;
+  color: #9b9b9b;
+  background: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.clear-btn:hover {
+  background: #9b9b9b;
+  color: #fff;
+} 
+
+.odontogram-quadrant.quadrant1:hover {
+  background-position: -144px 0;
+}
+.odontogram-quadrant.quadrant2:hover {
+  background-position: -214px 0;
+}
+.odontogram-quadrant.quadrant3:hover {
+  background-position: -144px -40px;
+}
+.odontogram-quadrant.quadrant4:hover {
+  background-position: -214px -40px;
+}
+.my_img img{
+  width: 130px;
+  /* margin-right: 62px; */
+}
+.buttons{
+  text-align: center;
+  
+}
+.mat-raised-button{
+  font-size: 11px;
+}
+
+ .mat-raised-button.mat-primary {
+  background-color: #079dae;
+}
+
+.disabledbutton {
+  pointer-events: none;
+  opacity: 0.4;
+}
+.buttoncolor {
+  background-color: #058b9d;
+  color: #fff;
+}
+.label_my{
+  font-size: 15px;
+}
+.img-placeholder{
+  height: 130px;
+}
+.pd-left{
+  padding-left: 0px;
+}
+.mb-0 a{
+  color: #000;
+}
+.tooth:not(.missing) .diagnosis.caries.buccal {
+  background-image: url(../../../assets/images/caries_buccal.3fdcdedd5627f05e1dac.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+#tooth18 .plan{
+  background-position: 0 0;
+}
+#tooth17 .plan{
+  background-position: -51px 0;
+}
+#tooth16 .plan{
+  background-position: -107px 0;
+}
+#tooth15 .plan{
+  background-position: -160px 0;
+}
+#tooth14 .plan{
+  background-position: -202px 0;
+}
+#tooth13 .plan{
+  background-position: -245px  0;
+}
+#tooth12 .plan{
+  background-position: -286px 0;
+}
+#tooth11 .plan{
+  background-position: -329px 0;
+}
+#tooth21 .plan{
+  background-position: -384px 0;
+}
+#tooth22 .plan{
+  background-position: -439px 0;
+}
+#tooth23 .plan{
+  background-position: -482px 0;
+}
+#tooth24 .plan{
+  background-position: -523px 0;
+}
+#tooth25 .plan{
+  background-position: -566px 0;
+}
+#tooth26 .plan{
+  background-position: -608px 0;
+}
+#tooth27 .plan{
+  background-position: -661px 0;
+}
+#tooth28 .plan{
+  background-position: -717px 0;
+}
+#tooth48 .plan{
+  background-position: 0 -126px;
+}
+#tooth47 .plan{
+  background-position: -64px -132px;
+}
+#tooth46 .plan{
+  background-position: -123px -149px;
+}
+#tooth45 .plan{
+  background-position: -184px -158px;
+}
+#tooth44 .plan{
+  background-position: -229px -170px;
+}
+#tooth43 .plan{
+  background-position: -274px -175px;
+}
+#tooth42 .plan{
+  background-position: -311px -183px;
+}
+#tooth41 .plan{
+  background-position: -347px -191px;
+}
+#tooth31 .plan{
+  background-position: -384px -191px;
+}
+#tooth32 .plan{
+  background-position: -421px -183px;
+}
+#tooth33 .plan{
+  background-position: -457px -175px;
+}
+#tooth34 .plan{
+  background-position: -494px -170px;
+}
+#tooth35 .plan{
+  background-position: -539px -158px;
+}
+#tooth36 .plan{
+  background-position: -584px -149px;
+}
+#tooth37 .plan{
+  background-position: -645px -132px;
+}
+#tooth38 .plan{
+  background-position: -704px -126px;
+}
+
+.tooth:not(.missing) .diagnosis.caries {
+  z-index: 505;
+}
+
+.tooth:not(.missing) .diagnosis.caries.distal{
+  background-image: url(../../../assets/images/caries_distal.45b18415c097c8b49b3c.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth:not(.missing) .diagnosis.caries.lingual{
+  background-image: url(../../../assets/images/caries_lingual.0ca175b5cf3509ec3237.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth:not(.missing) .diagnosis.caries.mesial{
+  background-image: url(../../../assets/images/caries_mesial.066895c133d20c8a8a8c.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth:not(.missing) .diagnosis.caries.occlusal{
+  background-image: url(../../../assets/images/caries_occlusal.6e7860e3d0b5283ae71d.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth:not(.missing) .diagnosis.fracture {
+  z-index: 510!important;
+}
+.tooth:not(.missing) .diagnosis.fracture.crown {
+  background-image: url(../../../assets/images/fracture_crown.cadd963fc64f118c4320.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth:not(.missing) .diagnosis.fracture.root {
+  background-image: url(../../../assets/images/fracture_root.287945c6fb48bc16d6c8.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth:not(.missing) .diagnosis.severely-damaged{
+  z-index: 512;
+  background-image: url(../../../assets/images/severely_damaged.ae7c1cbaa3f9e309d7a9.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth:not(.missing) .diagnosis.wear {
+  z-index: 599;
+}
+.tooth:not(.missing) .diagnosis.wear.mild {
+  background-image: url(../../../assets/images/wear_mild.f887a2884f0a6fa2efdd.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth:not(.missing) .diagnosis.wear.moderate {
+  background-image: url(../../../assets/images/wear_moderate.e64f64dfa163a7e4fe00.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth:not(.missing) .diagnosis.wear.severe {
+  background-image: url(../../../assets/images/wear_severe.17940b3d7f126ab73688.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.recession {
+  z-index: 589;
+}
+.tooth .diagnosis.recession.mild {
+  background-image: url(../../../assets/images/recession_mild.6f880bfe2b40098606bc.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+ .tooth .diagnosis.periodontitis {
+  z-index: 590;
+}
+.tooth .diagnosis.periodontitis.mild {
+  background-image: url(../../../assets/images/bone_loss_mild.66986898bec54b0a7403.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.recession.moderate {
+  background-image: url(../../../assets/images/recession_moderate.5babfd84b413a51d2b25.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+ .tooth .diagnosis.periodontitis.moderate {
+  background-image: url(../../../assets/images/bone_loss_moderate.1acfa1736a96aefe3041.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.recession.severe {
+  background-image: url(../../../assets/images/recession_severe.b67b28fcb26edd69b2dd.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+ .tooth .diagnosis.periodontitis.severe {
+  background-image: url(../../../assets/images/bone_loss_severe.94dc2820e21537b0d3e1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.normal {
+  opacity: 0;
+}
+.normal1 {
+  opacity: 0;
+}
+.normal2 {
+  opacity: 0;
+}
+.normal3 {
+  opacity: 0;
+}
+
+.tooth .diagnosis.necrosis{
+  z-index: 505;
+  background-image: url(../../../assets/images/necrosis.4b02699f1cc8b113d200.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.rct {
+  z-index: 505;
+}
+.tooth .plan.rct.satisfactory {
+  background-image: url(../../../assets/images/rct_ok.5e1e482709c658be407e.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.rct.unsatisfactory {
+  background-image: url(../../../assets/images/rct_nok.203e5dd92f7e17f82559.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.apical-lesion {
+  z-index: 505;
+}
+.tooth .plan.apical-lesion.mild {
+  background-image: url(../../../assets/images/apical_lesion_mild.d4f24eaef21fff82bb8e.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.apical-lesion.moderate {
+  background-image: url(../../../assets/images/apical_lesion_moderate.be68728d29803710e939.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.apical-lesion.severe {
+  background-image: url(../../../assets/images/apical_lesion_severe.9da4574d43ebd0628db3.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.broken-instrument {
+  z-index: 505;
+  background-image: url(../../../assets/images/broken_instrument.fbbe49fda9f1a233e5bd.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.root-resorption {
+  z-index: 505;
+  background-image: url(../../../assets/images/root_resorption.2688462faa1d4b7b5404.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.implant.ok {
+  background-image: url(../../../assets/images/implant_ok.46c056f3fc2c8441a3ad.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.implant {
+  z-index: 502;
+}
+.tooth .plan.implant {
+  background-image: url(../../../assets/images/implant_nok.51c9a0cf67e7002c230e.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.impacted {
+  z-index: 502;
+  background-image: url(../../../assets/images/impacted.c92dbdeb126be230d9c4.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.impacted-infected {
+  z-index: 502;
+  background-image: url(../../../assets/images/impacted.c92dbdeb126be230d9c4.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.large-sinus {
+  z-index: 589;
+  background-image: url(../../../assets/images/large_sinus.283e55ef97ad47465235.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.restoration.ok.buccal {
+  background-image: url(../../../assets/images/restoration_ok_b.382be61fb8617913d2bb.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.restoration {
+  z-index: 503;
+}
+
+.tooth .diagnosis.restoration.ok.distal {
+  background-image: url(../../../assets/images/restoration_ok_d.36c31d6f3ad7d9d36997.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.restoration.ok.lingual {
+  background-image: url(../../../assets/images/restoration_ok_l.127354f36885158e0a28.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.restoration.ok.mesial {
+  background-image: url(../../../assets/images/restoration_ok_m.0b1c63b17aafb4facc78.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.restoration.ok.occlusal {
+  background-image: url(../../../assets/images/restoration_ok_o.05366bfdd0e52fc39327.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.restoration.buccal {
+  background-image: url(../../../assets/images/restoration_nok_b.fb397cd472882a8a54b4.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.restoration.distal {
+  background-image: url(../../../assets/images/restoration_nok_d.54e0c5b8b8598de994ad.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.restoration.lingual {
+  background-image: url(../../../assets/images/restoration_nok_l.77f7cae6fddd32d1bfa2.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.restoration.mesial {
+  background-image: url(../../../assets/images/restoration_nok_m.474622f2a08cf8e396b5.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.restoration.occlusal {
+  background-image: url(../../../assets/images/restoration_nok_o.c65d3317cc2db4ef91a6.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.post.ok {
+  background-image: url(../../../assets/images/post_ok.190726a1ef35a5648a54.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.post {
+  z-index: 506;
+}
+.tooth .diagnosis.post.deficient {
+  background-image: url(../../../assets/images/post_nok.ffe0cb618a2d49da3f25.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.splint.ok.mesial {
+  background-image: url(../../../assets/images/splint_m.acbf6406dc9293d14e20.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.splint {
+  z-index: 507;
+}
+.tooth .diagnosis.splint.ok.distal {
+  background-image: url(../../../assets/images/splint_d.9faaaec08340c046096d.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.splint.deficient.mesial {
+  background-image: url(../../../assets/images/splint_nok_m.bd3ad78abb9954c0e918.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.splint.deficient.distal {
+  background-image: url(../../../assets/images/splint_nok_d.8ba4513b29cd60dfa712.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.discolored {
+  z-index: 501;
+  background-image: url(../../../assets/images/discolored.ca2528414fabc7060d02.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.veneer.ok {
+  background-image: url(../../../assets/images/veneer_ok.059e474f9e3bf33523af.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.veneer {
+  z-index: 515;
+}
+
+.tooth .diagnosis.veneer.discolored,
+.tooth .diagnosis.veneer.fractured, 
+.tooth .diagnosis.veneer.leaking, 
+.tooth .diagnosis.veneer.unaesthetic, 
+.tooth .diagnosis.veneer.worn {
+  background-image: url(../../../assets/images/veneer_nok.dc3551200feabdcb861d.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.crown.ok {
+  background-image: url(../../../assets/images/crown_ok.d0a0640332aaedd85452.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.crown {
+  z-index: 516;
+}
+
+.tooth .diagnosis.crown.discolored, 
+.tooth .diagnosis.crown.fractured, 
+.tooth .diagnosis.crown.leaking, 
+.tooth .diagnosis.crown.unaesthetic, 
+.tooth .diagnosis.crown.worn {
+  background-image: url(../../../assets/images/crown_nok.9fc47baeb5c17453a005.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.onlay.ok {
+  background-image: url(../../../assets/images/onlay_ok.9bbe63f4d3f5bcf918c1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.onlay{
+  z-index: 517;
+}
+
+.tooth .diagnosis.onlay.discolored, 
+.tooth .diagnosis.onlay.fractured, 
+.tooth .diagnosis.onlay.leaking, 
+.tooth .diagnosis.onlay.unaesthetic, 
+.tooth .diagnosis.onlay.worn {
+  background-image: url(../../../assets/images/onlay_nok.370ffcb26fc3a9784f33.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.bridge.ok {
+  background-image: url(../../../assets/images/bridge_ok.d393cb23287c306c84a9.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.bridge {
+  z-index: 555;
+}
+
+.tooth .diagnosis.bridge.ok.mesial{
+  background-image: url(../../../assets/images/bridge_ok_m.276673a19948f49100f2.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.bridge.discolored, 
+.tooth .diagnosis.bridge.fractured, 
+.tooth .diagnosis.bridge.leaking, 
+.tooth .diagnosis.bridge.unaesthetic, 
+.tooth .diagnosis.bridge.worn {
+  background-image: url(../../../assets/images/bridge_nok.aa345188df158fdbb234.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.bridge.discolored.mesial, 
+.tooth .diagnosis.bridge.fractured.mesial, 
+.tooth .diagnosis.bridge.leaking.mesial, 
+.tooth .diagnosis.bridge.unaesthetic.mesial, 
+.tooth .diagnosis.bridge.worn.mesial {
+  background-image: url(../../../assets/images/bridge_nok_m.4c93786ae170e7f600fd.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.denture {
+  z-index: 551;
+}
+.tooth .diagnosis.denture.ok{
+  background-image: url(../../../assets/images/denture_ok.c92d4107b845c3e00a98.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.denture.ok.mesial {
+  background-image: url(../../../assets/images/denture_ok_m.8997c30b1c5221c6421b.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.denture.ok.distal {
+  background-image: url(../../../assets/images/denture_ok_d.74e57f5338213bb960e6.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .diagnosis.denture.discolored, 
+.tooth .diagnosis.denture.fractured, 
+.tooth .diagnosis.denture.leaking, 
+.tooth .diagnosis.denture.unaesthetic, 
+.tooth .diagnosis.denture.worn {
+  background-image: url(../../../assets/images/denture_nok.3b2e7e4f73deb0ef2363.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.denture.discolored.mesial, 
+.tooth .diagnosis.denture.fractured.mesial, 
+.tooth .diagnosis.denture.leaking.mesial, 
+.tooth .diagnosis.denture.unaesthetic.mesial, 
+.tooth .diagnosis.denture.worn.mesial {
+  background-image: url(../../../assets/images/denture_nok_m.fffe33b58781438d1595.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.denture.discolored.distal, 
+.tooth .diagnosis.denture.fractured.distal, 
+.tooth .diagnosis.denture.leaking.distal, 
+.tooth .diagnosis.denture.unaesthetic.distal, 
+.tooth .diagnosis.denture.worn.distal {
+  background-image: url(../../../assets/images/denture_nok_d.677445395f4dd55717ad.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .diagnosis.gummy-smile {
+  z-index: 510;
+  background-image: url(../../../assets/images/gummy_smile.fb236215e4ac3f53a623.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+/* .tooth .plan.bone-regeneration {
+  z-index: 499;
+  background-image: url(../../../assets/images/bone-regeneration.7b140b69fd2aaa607bce.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+} */
+
+.tooth .plan.rct {
+  z-index: 605;
+  background-image: url(../../../assets/images/rct.f94c03ed2b3ee2b0b8df.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.apicectomy {
+  z-index: 690;
+  background-image: url(../../../assets/images/apicectomy.079b0a925ce4e2b3e777.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.implant {
+  z-index: 602;
+  background-image: url(../../../assets/images/implant.a1a0625447edb1b7b633.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.bone-regeneration{
+  z-index: 499;
+  background-image: url(../../../assets/images/bone-regeneration.7b140b69fd2aaa607bce.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.restoration.buccal{
+  background-image: url(../../../assets/images/restoration_b.c9f472801636355779fe.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.restoration{
+  z-index: 607;
+}
+
+.tooth .plan.restoration.distal{
+  background-image: url(../../../assets/images/restoration_d.d8967fd8d75911e6b3c6.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.restoration.lingual{
+  background-image: url(../../../assets/images/restoration_l.f84ddbbd006454a49ad9.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.restoration.mesial{
+  background-image: url(../../../assets/images/restoration_m.60368baaa0fc8ffd6bad.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.restoration.occlusal{
+  background-image: url(../../../assets/images/restoration_o.4f363a09536c6be99f7e.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.post {
+  z-index: 606;
+  background-image: url(../../../assets/images/post.5f8d565ed5e2d156673b.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.splint.mesial{
+  background-image: url(../../../assets/images/splint_m.5b26bf9cde67163d04d9.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.splint {
+  z-index: 604;
+}
+
+.tooth .plan.splint.distal {
+  background-image: url(../../../assets/images/splint_d.92588d25b1e33aab82a3.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.external-bleach {
+  z-index: 502;
+  background-image: url(../../../assets/images/external-bleach.257b775479774fd6810a.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.internal-bleach {
+  z-index: 502;
+  background-image: url(../../../assets/images/external-bleach.257b775479774fd6810a.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.core-build-up.buccal {
+  background-image: url(../../../assets/images/restoration_b.c9f472801636355779fe.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.core-build-up {
+  z-index: 607;
+}
+
+.tooth .plan.core-build-up.distal{
+  background-image: url(../../../assets/images/restoration_d.d8967fd8d75911e6b3c6.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.core-build-up.lingual{
+  background-image: url(../../../assets/images/restoration_l.f84ddbbd006454a49ad9.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.core-build-up.mesial{
+  background-image: url(../../../assets/images/restoration_m.60368baaa0fc8ffd6bad.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.core-build-up.occlusal{
+  background-image: url(../../../assets/images/restoration_o.4f363a09536c6be99f7e.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.provisional-restoration.buccal {
+  background-image: url(../../../assets/images/restoration_b.c9f472801636355779fe.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.provisional-restoration {
+  z-index: 607;
+}
+
+.tooth .plan.provisional-restoration.distal{
+  background-image: url(../../../assets/images/restoration_d.d8967fd8d75911e6b3c6.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.provisional-restoration.lingual{
+  background-image: url(../../../assets/images/restoration_l.f84ddbbd006454a49ad9.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.provisional-restoration.mesial{
+  background-image: url(../../../assets/images/restoration_m.60368baaa0fc8ffd6bad.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.provisional-restoration.occlusal{
+  background-image: url(../../../assets/images/restoration_o.4f363a09536c6be99f7e.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.veneer {
+  z-index: 615;
+  background-image: url(../../../assets/images/veneer.f1d4af465962af6f28af.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.onlay {
+  z-index: 616;
+  background-image: url(../../../assets/images/onlay.17f98f83d431cd3f4c84.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.crown {
+  z-index: 617;
+  background-image: url(../../../assets/images/crown.fdc45a94fe4827ed9805.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.bridge{
+  z-index: 665;
+  background-image: url(../../../assets/images/bridge.965366a18e4d1e524afd.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.bridge.mesial{
+  background-image: url(../../../assets/images/bridge_m.1bb5bb626e572817e372.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.bridge{
+  z-index: 665;
+}
+.tooth .plan.bridge.distal{
+  background-image: url(../../../assets/images/bridge_d.324bc1be11360e9c8882.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.adhesive-bridge {
+  z-index: 665;
+  background-image: url(../../../assets/images/bridge.965366a18e4d1e524afd.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.adhesive-bridge.mesial{
+  background-image: url(../../../assets/images/bridge_m.1bb5bb626e572817e372.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.adhesive-bridge{
+  z-index: 665;
+}
+
+.tooth .plan.adhesive-bridge.distal {
+  background-image: url(../../../assets/images/bridge_d.324bc1be11360e9c8882.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.denture {
+  z-index: 651;
+  background-image: url(../../../assets/images/denture.3aa7f81799e3d7f1658a.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.denture.mesial {
+  background-image: url(../../../assets/images/denture_m.ae6699a1a4da2013fda9.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.denture{
+  z-index: 651;
+}
+
+.tooth .plan.denture.distal {
+  background-image: url(../../../assets/images/denture_d.3f36af065ee185849022.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.tooth .plan.provisional-bridge {
+  z-index: 665;
+  background-image: url(../../../assets/images/bridge.965366a18e4d1e524afd.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.provisional-bridge.mesial{
+  background-image: url(../../../assets/images/bridge_m.1bb5bb626e572817e372.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.provisional-bridge{
+  z-index: 665;
+}
+
+.tooth .plan.provisional-bridge.distal {
+  background-image: url(../../../assets/images/bridge_d.324bc1be11360e9c8882.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.tooth .plan.provisional-crown {
+  z-index: 617;
+  background-image: url(../../../assets/images/crown.fdc45a94fe4827ed9805.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}

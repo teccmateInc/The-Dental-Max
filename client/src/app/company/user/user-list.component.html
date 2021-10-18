@@ -1,0 +1,128 @@
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card ">
+        <div class="card-header ">
+          <h3 class="card_text">Patients</h3>
+          <button class="btn btn-primary my_btn"  >+ Add</button>
+         
+          
+        </div>
+        <div class="card-block ">
+          <mat-vertical-stepper #stepper>
+            <mat-step [stepControl]="firstFormGroup">
+              <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel><b>The patient associated to this plan</b></ng-template>
+                <mat-form-field>
+                  <input matInput placeholder="Search Patient" formControlName="firstCtrl" required>
+                </mat-form-field>
+                <!-- Large modal -->
+                <a href="#" class="btn btn-lg my_btn" data-toggle="modal" data-target="#largeModal">+ Create new patient</a>
+
+               
+                <div>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup">
+              <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel><b>Plan Name</b> <br>The name that will appear on your plan</ng-template>
+                
+                <mat-form-field>
+                  <input matInput placeholder="Enter a name for your plan" formControlName="secondCtrl" required>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <!-- <mat-step>
+              <ng-template matStepLabel>Done</ng-template>
+              You are now done.
+              <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>
+              </div>
+            </mat-step> -->
+          </mat-vertical-stepper>
+          
+        </div>
+       
+      </div>
+    </div>
+    
+  </div>
+ 
+</div>
+
+
+
+<!-- large modal -->
+<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Create new Patient</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+          <form class="contact2-form validate-form">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="wrap-input2 validate-input" data-validate="Name is required">
+        <input class="input2" type="text" name="name" [(ngModel)]="patient.Name">
+        <span class="focus-input2" data-placeholder="Name"></span>
+      </div>
+  
+      <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+        <input class="input2" type="text" name="email"  [(ngModel)]="patient.Email">
+        <span class="focus-input2" data-placeholder="Email" ></span>
+      </div>
+  
+      <div class="wrap-input2 validate-input" data-validate = "Phone is required">
+        <input class="input2" type="text" name="phone"  [(ngModel)]="patient.Phone">
+        <span class="focus-input2" data-placeholder="Phone"></span>
+      </div>
+  
+      <div class="custom-control custom-radio custom-control-inline mt-3">
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" value="male"  [(ngModel)]="patient.Gender" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1">Male</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline mt-3">
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" value="female"  [(ngModel)]="patient.Gender" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline2">Female</label>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="wrap-input2 validate-input" data-validate = "Message is required">
+        <textarea class="input2"  [(ngModel)]="patient.Notes" name="message"></textarea>
+        <span class="focus-input2" data-placeholder="Notes"></span>
+      </div>
+    
+    </div>
+  </div>
+  <!-- <a href="javascript:void(0)"  class="btn my_btn_two mt-5">Save</a> 
+  <a href="javascript:void(0)"  class="btn my_btn_delete mt-5">Delete</a>  -->
+  
+           
+          </form>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

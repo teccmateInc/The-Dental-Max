@@ -1,0 +1,21 @@
+<div class="odontogram-container" layout="column" flex [class.disabled]="!active">
+  <div class="odontogram">
+    <app-odontogram-tooth *ngFor="let tooth of teeth" [tooth]="tooth" [disabled]="editable"
+      [showNumbering]="showNumbering" [numberSystem]="numberSystem" (toggleTooth)="toggleTooth($event)">
+    </app-odontogram-tooth>
+  </div>
+
+  <!--<span class="fill-space" *ngIf="editable"></span>-->
+
+  <!-- <app-quadrant-selector flex *ngIf="editable"
+    [q1Selected]="q1Selected$ | async"
+    [q2Selected]="q2Selected$ | async"
+    [q3Selected]="q3Selected$ | async"
+    [q4Selected]="q4Selected$ | async"
+    (q1Toggled)="toggleQuadrant1()"
+    (q2Toggled)="toggleQuadrant2()"
+    (q3Toggled)="toggleQuadrant3()"
+    (q4Toggled)="toggleQuadrant4()"
+    (selectionCleared)="clearSelection()">
+  </app-quadrant-selector> -->
+</div>

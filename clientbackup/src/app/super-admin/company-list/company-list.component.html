@@ -1,0 +1,82 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card ">
+        <div class="card-header ">
+          <h3 class="card_text">Patients</h3>
+          <button class="btn btn-primary my_btn" (click)="showScreen()" >+ Add</button>
+          <div class="span3 widget-span widget-type-raw_html custom-search" style="" data-widget-type="raw_html" data-x="4" data-w="3">
+            <div class="cell-wrapper layout-widget-wrapper">
+              <span id="hs_cos_wrapper_module_14308928327274411" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><form method="GET" action="https://www.shopwithscrip.com/Search?" role="search" class="navbar-form navbar-left ng-pristine ng-valid" id="express-form" novalidate="">
+          <input required="" name="q" placeholder="Search" class="form-control tt-input" id="express-form-typeahead" autocomplete="off" spellcheck="false" dir="auto" type="text">
+          <button class="search-btn" type="submit"><span class="icon"></span></button>
+              </form>
+              </span>
+            </div>
+            <!--end layout-widget-wrapper -->
+          </div>
+          
+        </div>
+        <div class="card-block text-center">
+         <p><i class="fa fa-user my_fa"></i></p> 
+         <p>Patients not found</p>
+          <a href="javascript:void(0)" class="btn my_btn_two" (click)="showScreen()">Create new Patient</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-lg-6" *ngIf="show">
+      <div class="card ">
+        <div class="card-header">
+          <h3 class="card_text">Create new Patient</h3>
+        </div>
+        <div class="card-block">
+          <form class="contact2-form validate-form">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="wrap-input2 validate-input" data-validate="Name is required">
+        <input class="input2" type="text" name="name" [(ngModel)]="patient.Name">
+        <span class="focus-input2" data-placeholder="Name"></span>
+      </div>
+
+      <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+        <input class="input2" type="text" name="email"  [(ngModel)]="patient.Email">
+        <span class="focus-input2" data-placeholder="Email" ></span>
+      </div>
+
+      <div class="wrap-input2 validate-input" data-validate = "Phone is required">
+        <input class="input2" type="text" name="phone"  [(ngModel)]="patient.Phone">
+        <span class="focus-input2" data-placeholder="Phone"></span>
+      </div>
+
+      <div class="custom-control custom-radio custom-control-inline mt-3">
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" value="male"  [(ngModel)]="patient.Gender" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1">Male</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline mt-3">
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" value="female"  [(ngModel)]="patient.Gender" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline2">Female</label>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="wrap-input2 validate-input" data-validate = "Message is required">
+        <textarea class="input2"  [(ngModel)]="patient.Notes" name="message"></textarea>
+        <span class="focus-input2" data-placeholder="Notes"></span>
+      </div>
+    
+    </div>
+  </div>
+  <a href="javascript:void(0)" (click)="savePatient()" class="btn my_btn_two mt-5">Save</a> 
+  
+           
+          </form>
+        </div>
+        <div class="card-footer text-muted">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+

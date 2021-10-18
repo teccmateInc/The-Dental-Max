@@ -1,0 +1,44 @@
+{
+  "UserID": null,
+    "UserName": null,
+    "EmployeeID": null,
+    "LoginName": null,
+    "LoginPassword": null,
+    "RoleCode": null,
+    "Email": null,
+    "Phone": null,
+    "Picture": null,
+    "Rating": null,
+    "JoinDate": null,
+    "TerminationDate": null,
+    "AccessCardNo": null,
+    "PrimaryCityCode": null,
+    "Status": null,
+    "UserCreatedBy": null,
+    "UserUpdatedBy": null,
+    "UserCreatedOn": null,
+    "UserUpdatedOn": null,
+
+
+  "EmployeePermission":[
+    {"ID": 1, "ActivityID": 1, "CanView": 0, "CanEdit": 0, "CanAdd": 0,  "Status": 1},
+    {"ID": 2, "ActivityID": 1, "CanView": 0, "CanEdit": 0, "CanAdd": 0,  "Status": 1},
+    {"ID": 3, "ActivityID": 1, "CanView": 0, "CanEdit": 0, "CanAdd": 0,  "Status": 1},
+    {"ID": 4, "ActivityID": 1, "CanView": 0, "CanEdit": 0, "CanAdd": 0,  "Status": 1},
+    {"ID": 5, "ActivityID": 1, "CanView": 0, "CanEdit": 0, "CanAdd": 0,  "Status": 1},
+    {"ID": 6, "ActivityID": 1, "CanView": 0, "CanEdit": 0, "CanAdd": 0,  "Status": 1},
+    {"ID": 7, "ActivityID": 1, "CanView": 0, "CanEdit": 0, "CanAdd": 0,  "Status": 1}
+  ],
+
+  "EmployeeCity":{
+    "ID": null,
+    "CityCode": null,
+    "Status": null
+  },
+
+  "EmployeeStore":{
+    "EmpStoreID": null,
+    "StoreID": null,
+    "Status": null
+  }
+}

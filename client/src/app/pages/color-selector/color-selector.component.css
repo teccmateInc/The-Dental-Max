@@ -1,0 +1,36 @@
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.w-8 {
+    width: 2rem;
+}
+.mb-1 {
+    margin-bottom: .25rem;
+}
+.mr-1 {
+    margin-right: .25rem;
+}
+.h-8 {
+    height: 2rem;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.border-2 {
+    border-width: 2px;
+}
+.border-transparent {
+    border-color: transparent;
+}
+.bg-cover {
+    background-size: cover;
+}
+.border-black {
+    border-color: #000;
+}

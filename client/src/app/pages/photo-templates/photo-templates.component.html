@@ -1,0 +1,57 @@
+<mat-card-header layout="row" layout-align="space-between center">
+  <!-- <h2 class="mat-title">{{ 'report_create.steps.documents.photos_templates.title' | translate }}</h2> -->
+
+  <button mat-icon-button color="primary" (click)="closeDialog()">
+    <mat-icon>clear</mat-icon>
+  </button>
+</mat-card-header>
+
+<mat-card-content flex layout="column" class="ph125 mt125">
+  <mat-form-field class="full-width">
+    <!-- <input matInput placeholder="{{ 'report_create.steps.documents.photos_templates.name' | translate }}"
+      [(ngModel)]="_document.name"> -->
+  </mat-form-field>
+
+  <!-- {{ 'report_create.steps.documents.photos_templates.template' | translate }} -->
+
+  <mat-grid-list cols="4" class="templates" gutterSize="20px" rowHeight="250px" *ngIf="!editMode">
+    <mat-grid-tile>
+      <div class="entry" [class.selected]="_document.template == 'template1'" (click)="selectTemplate('template1')">
+        <img class="img-responsive" src="/assets/images/phototemplates/template1.jpg" />
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="entry" [class.selected]="_document.template == 'template2'" (click)="selectTemplate('template2')">
+        <img class="img-responsive" src="/assets/images/phototemplates/template2.jpg" />
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="entry" [class.selected]="_document.template == 'template3'" (click)="selectTemplate('template3')">
+        <img class="img-responsive" src="/assets/images/phototemplates/template3.jpg" />
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="entry" [class.selected]="_document.template == 'template4'" (click)="selectTemplate('template4')">
+        <img class="img-responsive" src="/assets/images/phototemplates/template4.jpg" />
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <!-- <div class="template" *ngIf="editMode">
+    <photo-template-1 [configuration]="_document.templateContent" *ngIf="_document.template == 'template1'">
+    </photo-template-1>
+    <photo-template-2 [configuration]="_document.templateContent" *ngIf="_document.template == 'template2'">
+    </photo-template-2>
+    <photo-template-3 [configuration]="_document.templateContent" *ngIf="_document.template == 'template3'">
+    </photo-template-3>
+    <photo-template-4 [configuration]="_document.templateContent" *ngIf="_document.template == 'template4'">
+    </photo-template-4>
+  </div> -->
+</mat-card-content>
+
+<mat-card-actions align="end" class="mh125 mv125">
+  <!-- <button mat-raised-button type="button" color="primary" [disabled]="!(_document.name && _document.template)"
+    (click)="editTemplate()" *ngIf="!editMode">{{ 'next' | translate }}</button>
+  <button mat-raised-button type="button" color="primary" [disabled]="!(_document.name)" (click)="saveTemplate()"
+    *ngIf="editMode">{{ 'save' | translate }}</button> -->
+</mat-card-actions>

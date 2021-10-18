@@ -1,0 +1,189 @@
+.side-nav-logo{
+  background-color: white !important;
+  border-bottom: white !important;
+}
+.ti-view-grid{
+  color: white;
+}
+.side-nav{
+  /* background-image: url('../../assets/images/DZFCBackGroundPicture.jpg'); */
+  background-image: linear-gradient(#079bad,#0790a7,#086492);
+}
+.btn-default {
+  font-family: Raleway-SemiBold;
+  font-size: 13px;
+  color: rgba(108, 88, 179, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(108, 89, 179, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  }
+  .dropdwn_btn{
+    padding: 13px 29px !important;
+    }
+    .dropdwn_btn1{
+    padding: 13px 14px !important;
+    }
+    /* .label_text{
+    width: 157px;
+    } */
+    .top_form_ul{
+    display: inline-flex;
+    text-align: left;
+    padding-left: 0px;
+    }
+    .table th, .table td {
+    padding: 10px 4px !important;
+    /* padding: 0.75rem; */
+    vertical-align: top;
+     border-top: none !important;
+    }
+    .button_class a{
+    padding: 10px 0px;
+    width: 100%;
+    }
+    html{
+    background-color: #fff;
+    }
+    .navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+    }
+    .dropdown-submenu {
+    position:relative;
+    }
+    .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-6px;
+    }
+    
+    /* rotate caret on hover */
+    .dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+    }
+    .navbar-nav .nav-item .nav-link{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    }
+    .dropdown-menu > li > a{font-size: 13px;}
+    .drpdown-ul{margin-top: -4px;}
+    .nav-padding{padding: 3px 0px;}
+
+    #sidebar{
+      background:red;
+      width: 100px;
+      float:left;
+    }
+    .row{
+      margin-top: 15px;
+    }
+    .has-search .form-control {
+    padding-left: 1.375rem;
+    }
+    
+    .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 8.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    }
+    .row_margin{
+    margin-top: 0px;
+    }
+    .form_grp{
+    margin-right: 33px;
+      margin-bottom: 7px !important;
+    }
+    .new_ul {
+    display: inline-flex;
+    text-align: center;
+    padding-left: 0px;
+    }
+    .new_ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    }
+    .right_p{
+    position: absolute;
+      margin-top: -16px;
+      background-color: #f5f2f2;
+      padding: 0px 6px;
+    }
+    .header{
+      background-color: #fff !important;
+      color: #000 !important;
+    border-color: #fff !important;
+    -webkit-box-shadow: 0 8px 6px -11px black;
+	   -moz-box-shadow: 0 8px 6px -11px black;
+	        box-shadow: 0 8px 6px -11px black;
+    }
+
+ 
+.header-primary .header .header-container ul > li > a {
+    color: #000 !important;
+}
+
+.side-nav .side-nav-inner .side-nav-menu li a {
+  color: #fff !important;
+  
+}
+
+.logo_my{
+  /* top: 50%;
+  left: 50%; */
+  -webkit-transform: translate(57%,48%);
+  transform: translate(57%,48%);
+}
+
+.ti-view-grid {
+  color: #000 !important;
+}
+
+.page-container {
+  background-color: #fff !important;
+}
+.fa_my_class{
+  font-size: 22px;
+  color: #fff;
+ 
+}
+
+.my_svg_class {
+  fill: currentColor;
+  color: #fff;
+  width: 23px;
+ 
+  margin: auto;
+}
+.side-nav-menu li{
+  padding: 12px 2px;
+}
+.side-nav-menu li:hover{
+  background-color: #0000002e;
+}
+mat-icon{
+  width: 41px;
+    text-align: center;
+    vertical-align: middle;
+}
+.side-nav .side-nav-inner .side-nav-menu > li > a {
+  
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.user-info{
+  color: #4d9eae;
+}
+.title{
+  margin-left: 24px;
+}

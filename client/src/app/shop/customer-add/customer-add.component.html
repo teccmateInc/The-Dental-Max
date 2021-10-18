@@ -1,0 +1,244 @@
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <mat-horizontal-stepper #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel><b>Diagnose</b></ng-template>
+            <!-- <mat-form-field>
+              <input matInput placeholder="Search Patient" formControlName="firstCtrl" required>
+            </mat-form-field> -->
+            <div class="row">
+              <div class="col-lg-10" style="box-shadow: 0 7px 14px 0 rgba(59,65,94,.1),0 3px 6px 0 rgba(0,0,0,.07)!important;">
+                <ul class="nav nav-pills mb-3 my_nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link " id="first-360-tab" data-toggle="pill" href="#first-360" role="tab" aria-controls="first-360" aria-selected="true">360</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="second-cfw-tab" data-toggle="pill" href="#second-cfw" role="tab" aria-controls="second-cfw" aria-selected="true">Caries Fractures Wear</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="third-pb-tab" data-toggle="pill" href="#third-pb" role="tab" aria-controls="third-pb" aria-selected="false">Perio Bone</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="fourth-en-tab" data-toggle="pill" href="#fourth-en" role="tab" aria-controls="fourth-en" aria-selected="false">Endodontics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="five-mti-tab" data-toggle="pill" href="#five-mti" role="tab" aria-controls="five-mti" aria-selected="false">Missing teeth Implants</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="six-rc-tab" data-toggle="pill" href="#six-rc" role="tab" aria-controls="six-rc" aria-selected="false">Restorative Color</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="seven-pr-tab" data-toggle="pill" href="#seven-pr" role="tab" aria-controls="seven-pr" aria-selected="false">Prosthodontics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="eight-oft-tab" data-toggle="pill" href="#eight-oft" role="tab" aria-controls="eight-oft" aria-selected="false">Orto Facial TMJ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="nine-other-tab" data-toggle="pill" href="#nine-other" role="tab" aria-controls="nine-other" aria-selected="false">Other</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  
+                      <div class="tab-pane fade" id="first-360" role="tabpanel" aria-labelledby="first-360-tab">
+                        <div class="row">
+                          <div class="col-lg-3">
+                         
+                </div>
+                <div class="col-lg-9">
+                  <div _ngcontent-c55="" class="circle360 ng-star-inserted">
+                    <div _ngcontent-c55="" class="clearfix">
+                      <div _ngcontent-c55="" class="quadrant q1 pull-left pull-left-none">
+                        <div _ngcontent-c55="" class="item item1 ok"></div>
+                        <div _ngcontent-c55="" class="item item2 ok"></div>
+                        <div _ngcontent-c55="" class="label360 label1">
+                          Crooked &amp; Shifting Teeth
+                        </div>
+                        <div _ngcontent-c55="" class="label360 label2">
+                          Darkening Teeth
+                        </div>
+                      </div>
+                      <div _ngcontent-c55="" class="quadrant q2 pull-left pull-left-none">
+                        <div _ngcontent-c55="" class="item item1 ok"></div>
+                        <div _ngcontent-c55="" class="item item2 ok"></div>
+                        <div _ngcontent-c55="" class="label360 label1">
+                           Missing &amp; Drifting Teeth
+                        </div>
+                        <div _ngcontent-c55="" class="label360 label2">
+                           Tooth Decay or Infection
+                        </div>
+                      </div>
+                    </div>
+                    <div _ngcontent-c55="" class="clearfix">
+                      <div _ngcontent-c55="" class="quadrant q4 pull-left pull-left-none">
+                        <div _ngcontent-c55="" class="item item1 ok"></div>
+                        <div _ngcontent-c55="" class="item item2 ok"></div>
+                        <div _ngcontent-c55="" class="label360 label1">
+                          Problems in existing treatments
+                        </div>
+                        <div _ngcontent-c55="" class="label360 label2">
+                          Bite &amp; Joint Problems
+                        </div>
+                      </div>
+                      <div _ngcontent-c55="" class="quadrant q3 pull-left pull-left-none">
+                        <div _ngcontent-c55="" class="item item1 ok"></div>
+                        <div _ngcontent-c55="" class="item item2 ok"></div>
+                        <div _ngcontent-c55="" class="label360 label1">
+                           Gum Disease or Bone Loss
+                        </div>
+                        <div _ngcontent-c55="" class="label360 label2">
+                           Enamel loss &amp; damage
+                        </div>
+                      </div>
+                    </div>
+                    <div _ngcontent-c55="" class="text">
+                      <div _ngcontent-c55="" class="bold">360</div>
+                      <div _ngcontent-c55="">DENTAL<br>HEALTH</div>
+                    </div>
+                    </div> 
+                </div>
+              </div>
+                      </div>
+                      <div class="tab-pane fade  show active" id="second-cfw" role="tabpanel" aria-labelledby="second-cfw-tab">
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div id="accordion">
+                              <div class="card">
+                                <div class="card-header" id="heading-1">
+                                  <h5 class="mb-0">
+                                    <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                      Caries
+                                    </a>
+                                  </h5>
+                                </div>
+                                <div id="collapse-1" class="collapse show" data-parent="#accordion" aria-labelledby="heading-1">
+                                  <div class="card-body">
+                                    Text 1
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="heading-2">
+                                  <h5 class="mb-0">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                      Fracture
+                                    </a>
+                                  </h5>
+                                </div>
+                                <div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+                                  <div class="card-body">
+                                    Text 2
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="heading-3">
+                                  <h5 class="mb-0">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                      Severely Damaged
+                                    </a>
+                                  </h5>
+                                </div>
+                                <div id="collapse-3" class="collapse" data-parent="#accordion" aria-labelledby="heading-3">
+                                  <div class="card-body">
+                                    Text 3
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="heading-4">
+                                  <h5 class="mb-0">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                      Wear
+                                    </a>
+                                  </h5>
+                                </div>
+                                <div id="collapse-4" class="collapse" data-parent="#accordion" aria-labelledby="heading-4">
+                                  <div class="card-body">
+                                    Text 3
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 p-0">
+                           <div class="teeth_img"></div>
+                           <div class="bone-line_img"></div>
+                           <div class="bone-normal_img"></div>
+                           <div class="bone-normal2_img"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="tab-pane fade" id="third-pb" role="tabpanel" aria-labelledby="third-pb-tab">Gg</div>
+                      <div class="tab-pane fade" id="fourth-en" role="tabpanel" aria-labelledby="fourth-en-tab">jj</div>
+                      <div class="tab-pane fade" id="five-mti" role="tabpanel" aria-labelledby="five-mti-tab">jj</div>
+                      <div class="tab-pane fade" id="six-rc" role="tabpanel" aria-labelledby="six-rc-tab">jj</div>
+                      <div class="tab-pane fade" id="seven-pr" role="tabpanel" aria-labelledby="seven-pr-tab">jj</div>
+                      <div class="tab-pane fade" id="eight-oft" role="tabpanel" aria-labelledby="eight-oft-tab">jj</div>
+                      <div class="tab-pane fade" id="nine-other" role="tabpanel" aria-labelledby="nine-other-tab">jj</div>
+                    </div>
+                    <!-- <div class="col-lg-8">
+                      
+                    </div> -->
+                  </div>
+                
+
+              <div class="col-lg-2" >
+                <div class="p-3"  style="box-shadow: 0 7px 14px 0 rgba(59,65,94,.1),0 3px 6px 0 rgba(0,0,0,.07)!important;">
+                <p class="p-one">Current Diagnosis</p>
+
+                <p class="p-two">Condition:</p>
+
+                <p class="p-three">Caries</p>
+
+                <p class="p-four">Surfaces:</p>
+
+                <p class="p-five">Teeth:</p>
+
+               
+                </div>
+              </div>
+            </div>
+
+           
+            <!-- <div>
+              <button mat-button matStepperNext>Next</button>
+            </div> -->
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel><b>Plan Name</b></ng-template>
+            
+            <mat-form-field>
+              <input matInput placeholder="Enter a name for your plan" formControlName="secondCtrl" required>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Report</ng-template>
+          You are now done.
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </mat-step>
+      </mat-horizontal-stepper>
+    </div>
+    
+  </div>
+ 
+</div>
+
+
+

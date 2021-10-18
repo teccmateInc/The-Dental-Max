@@ -1,0 +1,25 @@
+{
+  "WorkerID": null,
+  "WorkerName": null,
+  "EmpID": null,
+  "RoleCode": null,
+  "Phone": null,
+  "Picture": null,
+  "ManualRating": null,
+  "SystemRating": null,
+  "JoinDate": null,
+  "TerminationDate": null,
+  "AccessCardNo": null,
+  "PrimaryCityCode": null,
+  "Status": null,
+  "WorkerCreatedBy": null,
+  "WorkerUpdatedBy": null,
+  "WorkerCreatedOn": null,
+  "WorkerUpdatedOn": null,
+  "WorkerSkill":{
+    "ID": null,
+    "WorkTypeID": null,
+    "isPrimarySkill": null,
+    "SkillLevel": null,
+    "Status": null}
+  }

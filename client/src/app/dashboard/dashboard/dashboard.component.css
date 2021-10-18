@@ -1,0 +1,73 @@
+/* .card-header {
+    background-color: #EA6B36;
+}
+.card-header> p {
+    color: white;
+} */
+thead{
+    background-color: #EA6B36;
+}
+
+.card {
+    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1),0 3px 6px 0 rgba(0,0,0,.07)!important;
+    border-radius: .5rem!important;
+    border-top: 5px solid #079dae;
+    transition: 0.3s;
+    margin-top: 10px;
+    margin: 10px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #079dae;
+    color: #fff;
+    /* top:-10px; */
+    -webkit-transition: all .5s; 
+    transition: all .5s;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  .card > .card-block >p {
+    font-size: 18px;
+    padding-top: 59px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #079dae;
+    font-weight: 500;
+  }
+  .card > .card-block:hover >i {
+    color: #fff;
+  }
+  .card> .card-block:hover >.my_svg_class {
+    fill: currentColor;
+    color: #fff;
+  }
+  .card > .card-block:hover >p {
+    color: #fff;
+  }
+  .card > .card-block:hover >h5 {
+    color: hsla(0,0%,100%,.7);
+  }
+  .card_text{
+      display: inline-block;
+  }
+  .card-header {
+    
+    background-color: #fff;
+    
+}
+
+.fa_my_class{
+    font-size: 33px;
+    color: #4d9eae;
+    margin-top: 40px;
+}
+
+.my_svg_class {
+    fill: currentColor;
+    color: #4d9eae;
+    width: 35px;
+    height: 39px;
+    margin: auto;
+    margin-top: 29px;
+}

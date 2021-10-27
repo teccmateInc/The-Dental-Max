@@ -1,0 +1,265 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card ">
+        <div class="card-header ">
+          <h3 class="card_text">Patients</h3>
+          <button class="btn  my_btn"  [routerLink]="['/pages/patient/0']" (click)="showScreen()" ><span class="mat-button-wrapper my_span">
+            <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">add</mat-icon>Add</span></button>
+          <div class="span3 widget-span widget-type-raw_html custom-search"  data-widget-type="raw_html" data-x="4" data-w="3">
+            <div class="cell-wrapper layout-widget-wrapper">
+              <span id="hs_cos_wrapper_module_14308928327274411" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html"  data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><form method="GET" action="https://www.shopwithscrip.com/Search?" role="search" class="navbar-form navbar-left ng-pristine ng-valid" id="express-form" novalidate="">
+          <input required="" [(ngModel)]="searchText" #search name="search" placeholder="Search" class="form-control tt-input" id="express-form-typeahead" autocomplete="off" spellcheck="false" dir="auto" type="text">
+          <button class="search-btn" type="submit"><span class="icon"></span></button>
+              </form>
+              </span>
+            </div>
+            <!--end layout-widget-wrapper -->
+          </div>
+          
+        </div>
+        <div class="card-block text-center" *ngIf = "this.length === 0">
+         <p><i class="fa fa-user my_fa"></i></p> 
+         <p>Patients not found</p>
+          <a href="javascript:void(0)" class="btn my_btn_two" (click)="showScreen()">Create new Patient</a>
+          
+        </div>
+        <!-- <a href="#" class="list_a">
+          <div  class="list_add">
+            <p><i class="fa fa-user-circle-o list_add_icon"></i></p> 
+          <h3 class="list_add_name">rahul</h3 >
+          </div>
+          
+        </a> -->
+        <!-- <a  href="javascript:void(0)" (click)="editPatient(data)" class="notice" *ngFor="let data of PatientList | filter:searchText">
+          <strong><i class="fa fa-user-circle-o list_add_icon"></i></strong> {{data.Name}}
+        </a> -->
+        <mat-card-content _ngcontent-c51="" class="mat-card-content" flex="">
+         <!----><mat-list _ngcontent-c52="" class="mat-list ng-star-inserted" flex="">
+
+  <mat-nav-list _ngcontent-c52="" class="will-load item-list mat-nav-list" role="navigation">
+      <!---->
+          <a (click)="editPatient(data)" *ngFor="let data of PatientList | filter:searchText" class="list-item--hover mat-list-item ng-star-inserted" layout-align="row" mat-list-item="">
+            <div class="mat-list-item-content">
+              <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+              <mat-icon _ngcontent-c52="" class="mat-icon mat-list-icon material-icons" mat-list-icon="" role="img" aria-hidden="true">account_box</mat-icon>
+              <div class="mat-list-text">
+                <h3 _ngcontent-c52="" class="mat-line" mat-line=""> {{data.Name}}</h3></div>
+              
+              
+              <span _ngcontent-c52="" class="text-o50 text-f085">  </span>
+          </div></a>
+      
+        
+      
+  </mat-nav-list>
+
+</mat-list>
+
+
+      </mat-card-content>
+      </div>
+    </div>
+    <div class="col-lg-6" *ngIf="show">
+      <div class="card ">
+        <div class="card-header">
+          <h3 class="card_text">Create new Patient</h3>
+          <button color="primary" (click)="showScreen()" mat-icon-button="" class="mat-icon-button mat-primary float-right"><span class="mat-button-wrapper">
+            <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">clear</mat-icon>
+        </span><div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div><div class="mat-button-focus-overlay"></div></button>
+        </div>
+        <div class="card-block">
+          <form #patientForm="ngForm" (ngSubmit)="savePatient(); patientForm.reset()" novalidate class="contact2-form validate-form">
+  <div class="row">
+    <div class="col-lg-6">
+      
+        <mat-form-field data-validate="Name is required">
+          <input matInput placeholder="Name"  name="name"  [(ngModel)]="patient.Name">
+        </mat-form-field>
+        
+        <mat-form-field data-validate = "Valid email is required: ex@abc.xyz">
+          <input matInput placeholder="Email"  name="email"  [(ngModel)]="patient.Email">
+        </mat-form-field>
+
+        <mat-form-field data-validate = "Phone is required">
+          <input matInput placeholder="Phone"  name="phone" [(ngModel)]="patient.Phone">
+        </mat-form-field>
+        <!-- <mat-radio-group [(ngModel)]="patient.Gender" #radioGroup="matRadioGroup" style="display: inline-block;">
+          <mat-radio-button value="male">Male</mat-radio-button>
+          <mat-radio-button value="female" >Female</mat-radio-button>
+        </mat-radio-group>
+        radio group ngModel: {{ patient.Gender }} -->
+
+      <div>
+        <div class="custom-control form-check-inline custom-radio custom-control-inline mt-3" >
+          <input type="radio" id="customRadioInline1" name="customRadioInline1" value="male"  [(ngModel)]="patient.Gender" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline1">Male</label>
+        </div>
+        <div class="custom-control form-check-inline custom-radio custom-control-inline mt-3" >
+          <input type="radio" id="customRadioInline2" name="customRadioInline1" value="female"  [(ngModel)]="patient.Gender" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline2">Female</label>
+        </div>
+      </div>
+       
+      
+      
+      <!-- <div class="wrap-input2 validate-input" data-validate="Name is required">
+        <input class="input2" type="text" name="name" [(ngModel)]="patient.Name">
+        <span class="focus-input2" data-placeholder="Name"></span>
+      </div>
+
+      <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+        <input class="input2" type="text" name="email"  [(ngModel)]="patient.Email">
+        <span class="focus-input2" data-placeholder="Email" ></span>
+      </div>
+
+      <div class="wrap-input2 validate-input" data-validate = "Phone is required">
+        <input class="input2" type="text" name="phone"  [(ngModel)]="patient.Phone">
+        <span class="focus-input2" data-placeholder="Phone"></span>
+      </div>
+
+      <div class="custom-control custom-radio custom-control-inline mt-3">
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" value="male"  [(ngModel)]="patient.Gender" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1">Male</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline mt-3">
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" value="female"  [(ngModel)]="patient.Gender" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline2">Female</label>
+      </div> -->
+    </div>
+    <div class="col-lg-6">
+      <!-- <div class="wrap-input2 validate-input" data-validate = "Message is required">
+        <textarea class="input2"  [(ngModel)]="patient.Notes" name="message"></textarea>
+        <span class="focus-input2" data-placeholder="Notes"></span>
+      </div> -->
+      <mat-form-field data-validate = "Message is required">
+        <textarea matInput placeholder="Notes" name="message" [(ngModel)]="patient.Notes"></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <button type="submit" class="btn my_btn_two mt-5">Save</button> 
+  <a href="javascript:void(0)" (click)="deletePatient()"  *ngIf ="this.patient.PatientID" class="btn my_btn_delete mt-5">Delete</a> 
+  
+           
+          </form>
+        </div>
+        <div class="card-footer text-muted" >
+          <div class="my_svgsvg text-center" *ngIf="this.Planlength === 0 &&  this.patient.PatientID" >
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="22.032 115.484 107.951 127.937" enable-background="new 22.032 115.484 107.951 127.937" xml:space="preserve" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
+              <g>
+                <path fill="none" d="M95.998,139.472h-39.98c-1.105,0-1.998-0.895-1.998-2v-3.997H34.026c-1.103,0-1.998,0.894-1.998,1.998v95.952
+                  c0,1.104,0.896,2,1.998,2h83.964c1.103,0,1.998-0.896,1.998-2v-95.952c0-1.104-0.896-1.998-1.998-1.998H97.996v3.997
+                  C97.996,138.577,97.103,139.472,95.998,139.472z M94.186,188.16c-1.321,5.711-4.011,15.729-4.011,15.729
+                  c-0.459,2.571-1.767,5.106-3.03,4.483c-2.032-1.007-8.64-22.549-10.203-22.703c-0.133,0-0.799,0-0.932,0
+                  c-1.564,0.177-8.171,21.701-10.203,22.703c-1.263,0.623-2.588-1.917-3.03-4.483c0,0-2.685-10.026-4.011-15.729
+                  c-1.325-5.702-6.011-16.449-2.999-24.178c3.012-7.73,10.932-7.292,18.26-4.792c0,0,0.773,0.477,2.447,0.322
+                  c1.678,0.15,2.447-0.322,2.447-0.322c7.332-2.5,15.247-2.937,18.26,4.792C100.193,171.711,95.507,182.449,94.186,188.16z"></path>
+                <path d="M78.688,159.406c0,0-0.769,0.473-2.447,0.322c-1.674,0.155-2.447-0.322-2.447-0.322c-7.328-2.5-15.247-2.937-18.26,4.792
+                  c-3.012,7.73,1.674,18.476,2.999,24.178c1.325,5.702,4.011,15.729,4.011,15.729c0.442,2.566,1.767,5.106,3.03,4.483
+                  c2.032-1.003,8.64-22.526,10.203-22.703c0.133,0,0.799,0,0.932,0c1.564,0.155,8.171,21.696,10.203,22.703
+                  c1.263,0.623,2.571-1.913,3.03-4.483c0,0,2.69-10.018,4.011-15.729c1.321-5.711,6.007-16.449,2.995-24.178
+                  C93.935,156.469,86.02,156.906,78.688,159.406z"></path>
+                <path d="M119.988,123.481h-24.01c1.261,1.673,2.018,3.745,2.018,5.997v3.998h19.993c1.103,0,1.998,0.894,1.998,1.998v95.952
+                  c0,1.104-0.896,2-1.998,2H34.026c-1.103,0-1.998-0.896-1.998-2v-95.952c0-1.104,0.896-1.998,1.998-1.998h19.993v-3.998
+                  c0-2.251,0.757-4.324,2.018-5.997h-24.01c-5.511,0-9.995,4.484-9.995,9.995v99.951c0,5.51,4.484,9.995,9.995,9.995h87.961
+                  c5.511,0,9.995-4.485,9.995-9.995v-99.951C129.983,127.964,125.499,123.481,119.988,123.481z"></path>
+                <path d="M54.019,133.476v3.997c0,1.104,0.893,2,1.998,2h39.98c1.105,0,1.998-0.895,1.998-2v-3.997v-3.998
+                  c0-2.251-0.757-4.324-2.018-5.997c-1.826-2.422-4.717-3.998-7.977-3.998h-5.095c-1.409-2.439-4.029-3.998-6.898-3.998
+                  c-2.87,0-5.489,1.559-6.898,3.998h-5.095c-3.26,0-6.152,1.576-7.977,3.998c-1.261,1.673-2.018,3.745-2.018,5.997V133.476z
+                   M76.007,121.481c1.104,0,1.998,0.896,1.998,2c0,1.103-0.894,1.998-1.998,1.998c-1.104,0-1.998-0.896-1.998-1.998
+                  C74.009,122.376,74.903,121.481,76.007,121.481z"></path>
+              </g>
+              </svg>
+           <p>You don't have any plans yet.</p>
+            <a href="javascript:void(0)" (click)="createPlan()"  class="btn my_btn_two">Create new Plan</a>
+          </div>
+          <div class="table-responsive" *ngIf="this.Planlength !== 0 && show ">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Created At</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let data of planByPatientID">
+                  <th scope="row" (click)="createPlanbypatientid(data)">{{data.PlanName}}</th>
+                  <td (click)="createPlanbypatientid(data)">{{data.CreatedAt | date:'short'}}</td>
+                  <td class="td_display">
+                    <a href="#myModal" data-toggle="modal" (click)="alertPlan(data)"  class=" mr-3"><i class="fa fa-clone table_icon"></i></a> 
+                    <a href="#myModal1" data-toggle="modal" (click)="alertDeletePlan(data.PlanID)" ><i class="fa fa-trash table_icon"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="javascript:void(0)" (click)="createPlan()" *ngIf="this.Planlength !== 0"  class="btn my_btn_two mt-2 float-right">Create a new Plan</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+<!-- The Modal --> 
+<!-- this is for alert poup copy data -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Duplicate Plan</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        Are you sure you want to duplicate this plan?
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-delete" (click)="copyPlan()"  data-dismiss="modal">Yes, duplicate it</button>
+        <button type="button" class="btn btn-cancle" data-dismiss="modal">No, cancel</button>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- this alert poup for delete data -->
+
+<!-- The Modal -->
+<div class="modal" id="myModal1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Delete Plan</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        Are you sure you want to delete this plan?
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-delete" (click)="deletePlan()" data-dismiss="modal">Yes, delete it</button>
+        <button type="button" class="btn btn-cancle" data-dismiss="modal">No, cancel</button>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,538 @@
+<div #pdfContainer class="pdf-container">
+	<div class="pdf-cover page">
+		<div class="pdf-logo"></div>
+		<div class="pdf-dentist">
+			<div class="pdf-dentist-name">{{ dentist.Name }}</div>
+			<div class="pdf-contact-info"></div>
+		</div>
+		<div class="pdf-title">Treatment plan</div>
+		<div class="pdf-subtitle">{{ planName }}</div>
+		<div class="pdf-patient-name">{{ patientName }}</div>
+		<div class="pdf-date">{{ currentDate }}</div>
+		<div class="pdf-360 circle360" *ngIf="show360">
+			<app-threesixty></app-threesixty>
+		</div>
+	</div>
+
+	<div class="pdf-overview page">
+		<div class="body">
+			<div class="odontogram-main">
+				<div class="odontogram-title pull-left">
+					Perfect dentition at your age
+				</div>
+				<div class="odontogram-container pull-right" style="padding-right: 80%;">
+					<div class="resume-odontogram">
+						<app-odontogram [teeth]="perfectTeethArr" [active]="true" [editable]="false"
+							class="resume-odontogram">
+						</app-odontogram>
+					</div>
+				</div>
+			</div>
+			<div class="odontogram-main">
+				<div class="odontogram-title pull-left">
+					Your current situation
+				</div>
+				<div class="odontogram-container pull-right" style="padding-right: 80%;">
+					<div class="resume-odontogram">
+						<app-odontogram [teeth]="teethArr" [active]="true" [editable]="false" class="resume-odontogram">
+						</app-odontogram>
+					</div>
+				</div>
+			</div>
+			<div class="odontogram-main">
+				<div class="odontogram-title pull-left">
+					What we plan to do
+				</div>
+				<div class="odontogram-container pull-right" style="padding-right: 80%;">
+					<div class="resume-odontogram">
+						<app-odontogram [teeth]="teethArr" [active]="true" [editable]="false" class="resume-odontogram">
+						</app-odontogram>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="diagnosis" *ngIf="showDiagnosis">
+		<div class="pdf-diagnosis page">
+			<div class="report-header text-main-color clearfix">
+				<div class="pull-left">Diagnosis</div>
+				<div class="pull-right">
+					<img class="logo" [src]="settings?.doctor.logo" *ngIf="settings?.doctor.logo" />
+				</div>
+			</div>
+			<div class="body">
+				<div class="odontogram-container pull-right" style="padding-right: 80%;">
+					<div class="resume-odontogram">
+						<app-odontogram [teeth]="teethArr" [active]="true" [editable]="false" class="resume-odontogram">
+						</app-odontogram>
+					</div>
+				</div>
+				<table class="table-items table table-bordered splittable" *ngIf="diagnosis?.length > 0">
+					<thead>
+						<tr class="text-main-color">
+							<th style="min-width: 120px; color: #3ea8c9"></th>
+							<th style="min-width: 100px;color: #3ea8c9">Teeth</th>
+							<th style="color: #3ea8c9">Surface</th>
+							<th style="color: #3ea8c9">Degree/Status</th>
+							<th style="color: #3ea8c9">Observations</th>
+						</tr>
+					</thead>
+
+					<tbody class="splittable-items">
+						<tr *ngFor="let item of diagnosis; let i = index;" [class]="'tr' + i">
+							<td class="condition">
+								{{item.Tag}}
+							</td>
+							<td class="teeth">
+								{{ item.Teeths }}
+							</td>
+							<td class="surfaces">
+								{{ item.Surface }}
+							</td>
+							<td>
+								{{ item.DegreeStatus }}
+							</td>
+							<td class="text">
+								{{ item.Observations }}
+							</td>
+						</tr>
+					</tbody>
+
+				</table>
+				<div class="descriptions splittable">
+					<div class="splittable-items">
+						<div class="entry" *ngFor="let description of diagnosisDescs">
+							<div class="title">
+								{{ description.Title }}
+							</div>
+							<div class="description">
+								{{ description.Description }}
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="ortho ortho-malocclusions" *ngIf="orthoMalocclusionsActive">
+					<div class="title">
+						{{ _diagnosis.ortho.descriptions['malocclusions']['name'] }}
+					</div>
+					<div class="description">
+						{{ _diagnosis.ortho.descriptions['malocclusions']['content'] }}
+					</div>
+				</div>
+				<div class="ortho ortho-malocclusions splittable" *ngIf="orthoMalocclusionsActive">
+					<div class="splittable-items">
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.malo_class == 2">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_occlusion_2']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_occlusion_2']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.occlusion.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.occlusion.situation_2' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/classI.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/classII.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.malo_class == 3">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_occlusion_3']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_occlusion_3']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.occlusion.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.occlusion.situation_3' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/classI.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/classIII.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.midline_shift">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_midline_shift']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_midline_shift']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.midline_shift.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.midline_shift.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/midline_ok.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/midline_shift.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.crowding">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_crowding']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_crowding']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.crowding.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.crowding.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/crowding.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.spacing">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_spacing']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_spacing']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.spacing.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.spacing.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/spacing.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.overlap == 'overjet'">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_overlap_overjet']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_overlap_overjet']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.overjet.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.overjet.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/overjet.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.overlap == 'underbite'">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_overlap_underbite']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_overlap_underbite']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.underbite.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.underbite.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/underbite.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.bite == 'deepbite'">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_bite_deepbite']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_bite_deepbite']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.deep_bite.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.deep_bite.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/deepbite.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.bite == 'openbite'">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_bite_openbite']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_bite_openbite']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.open_bite.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.open_bite.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/openbite.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.crossbit">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_crossbite']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_crossbite']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.malocclusions.cross_bite.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.malocclusions.cross_bite.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/malocclusions/posterior_crossbit.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.malocclusions.disharmony">
+							<b>{{ _diagnosis.ortho.descriptions['malocclusions_skeletal_disharm']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['malocclusions_skeletal_disharm']['content'] }}
+						</div>
+
+					</div>
+
+				</div>
+				<div class="ortho ortho-facial" *ngIf="orthoFacialActive">
+					<div class="title">
+						{{ _diagnosis.ortho.descriptions['facial']['name'] }}
+					</div>
+					<div class="description">
+						{{ _diagnosis.ortho.descriptions['facial']['content'] }}
+					</div>
+				</div>
+				<div class="ortho ortho-facial splittable" *ngIf="orthoFacialActive">
+					<div class="splittable-items">
+						<div class="item" *ngIf="_diagnosis.ortho.facial.profile == 'retrognathic'">
+							<b>{{ _diagnosis.ortho.descriptions['facial_profile_retrognathic']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['facial_profile_retrognathic']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.facial.profile_retrognathic.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.facial.profile_retrognathic.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/facial/facial_normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/facial/facial_retrognathic.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.facial.profile == 'prognathic'">
+							<b>{{ _diagnosis.ortho.descriptions['facial_profile_prognathic']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['facial_profile_prognathic']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.facial.profile_prognathic.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.facial.profile_prognathic.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/facial/facial_normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/facial/facial_prognathic.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.facial.lower == 'short'">
+							<b>{{ _diagnosis.ortho.descriptions['facial_face_short']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['facial_face_short']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.facial.lower_short.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.facial.lower_short.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/facial/lower_normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/facial/lower_short.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.facial.lower == 'long'">
+							<b>{{ _diagnosis.ortho.descriptions['facial_face_long']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['facial_face_long']['content'] }}
+							<table class="table table-bordered">
+								<tr>
+									<td>{{ 'report.diagnosis.facial.lower_long.ideal' | translate }}</td>
+									<td>{{ 'report.diagnosis.facial.lower_long.situation' | translate }}</td>
+								</tr>
+								<tr>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/facial/lower_normal.png" />
+									</td>
+									<td>
+										<img
+											src="http://static.makemeclear.com/images/diagnose/ortho/facial/lower_long.png" />
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+				</div>
+				<div class="ortho ortho-facial splittable" *ngIf="orthoTMJActive">
+					<div class="splittable-items">
+						<div class="item" *ngIf="_diagnosis.ortho.tmj.bruxism">
+							<b>{{ _diagnosis.ortho.descriptions['tmj_bruxism']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['tmj_bruxism']['content'] }}
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.tmj.tmj_disorder">
+							<b>{{ _diagnosis.ortho.descriptions['tmj_tmj_disorder']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['tmj_tmj_disorder']['content'] }}
+						</div>
+
+						<div class="item" *ngIf="_diagnosis.ortho.tmj.muscle_disorder">
+							<b>{{ _diagnosis.ortho.descriptions['tmj_muscle_disorder']['name'] }}</b> -
+							{{ _diagnosis.ortho.descriptions['tmj_muscle_disorder']['content'] }}
+						</div>
+					</div>
+				</div> -->
+			</div>
+			<div class="footer">
+				<div class="page-number"></div>
+			</div>
+		</div>
+	</div>
+	<div class="pdf-plan page" *ngIf="showPlan">
+		<div class="pdf-section text-main-color clearfix">
+			<div class="pull-left">PLAN</div>
+			<div class="pull-right"></div>
+		</div>
+		<div class="odontogram-container pull-right" style="padding-right: 80%;">
+			<div class="resume-odontogram">
+				<app-odontogram [teeth]="teethArr" [active]="true" [editable]="false" class="resume-odontogram">
+				</app-odontogram>
+			</div>
+		</div>
+		<div *ngIf="isPlanExist" class="splittable" style="margin-top: 0.8cm;">
+			<div class="splittable-items" *ngFor="let planstage of planStages">
+				<div>
+					<div style="margin-bottom: 0.4cm; font-weight: bold;float: left;">{{planstage.StageName}}</div>
+				</div>
+				<table class="table-items table table-bordered splittable " style="margin-top: 0cm;">
+					<thead>
+						<tr class="text-main-color">
+							<th style="color: #3ea8c9 !important; min-width: 120px; width: 0px;"></th>
+							<th style="color: #3ea8c9 !important; min-width: 100px; width: 0px;">Teeth</th>
+							<th style="color: #3ea8c9 !important; width: 0px;">Surface/Type</th>
+							<th style="color: #3ea8c9 !important; width: 0px;">Observations</th>
+							<th style="color: #3ea8c9 !important; width: 0px;"
+								*ngIf="showPerItemPrice && showPlanPrices">Price</th>
+							<th style="color: #3ea8c9 !important; width: 0px;" *ngIf="showPlanDates">Date</th>
+						</tr>
+					</thead>
+					<tbody class="splittable-items">
+						<tr *ngFor="let plan of planstage.Plans">
+							<td class="condition"> <span>{{plan.Tag}}</span></td>
+							<td class="teeth">{{plan.Teeths}}</td>
+							<td class="surfaces">{{plan.Surface}}</td>
+							<td class="text">{{plan.Observation}} </td>
+							<td *ngIf="showPerItemPrice && showPlanPrices">{{plan.Price}}</td>
+							<td *ngIf="showPlanDates">{{plan.Date}}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="stage-price table" *ngIf="showStagePrices && showPlanPrices">
+					<tbody>
+						<tr>
+							<td>Stage total</td>
+							<td class="text-right">€{{planstage.StageTotal}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<table class="table" *ngIf="showTreatmentPrice && showPlanPrices">
+			<tbody>
+				<tr>
+					<th class="text-right">Treatment total</th>
+				</tr>
+				<tr>
+					<td class="text-right">
+						€{{treatmentTotal}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="report-info" style="font-weight: bold">
+			<p>Communicating accurately with our patients is very important for us.</p>
+			<p>This treatment plan is presented so you can easily visualize and understand your current dental situation
+				and possible treatment plan.</p>
+			<p>Some images are used for illustration purposes and may not represent your exact condition or possible
+				results.</p>
+			<p>Please feel free to contact us for any information you may need about this treatment plan.</p>
+			<p>Thank you for considering our practice to take care of the health and look of your smile.</p>
+		</div>
+	</div>
+	<div class="pdf-documents page">
+		<div class="splittable-items" *ngFor="let document of documents">
+			{{document.content}}
+		</div>
+	</div>
+</div>
